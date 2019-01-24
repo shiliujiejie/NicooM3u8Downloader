@@ -5,8 +5,7 @@
 [![License](https://img.shields.io/cocoapods/l/NicooM3u8Downloader.svg?style=flat)](https://cocoapods.org/pods/NicooM3u8Downloader)
 [![Platform](https://img.shields.io/cocoapods/p/NicooM3u8Downloader.svg?style=flat)](https://cocoapods.org/pods/NicooM3u8Downloader)
 <p align="center">
-<img src="https://raw.githubusercontent.com/hipposan/LemonDeer/master/Resources/LemonDeer-logo.png" width=600 />
-<p align="center"><i>Make m3u8 parse and video download as white magic.</i></p>
+<img src="https://github.com/yangxina/Application/blob/master/nicooM3u8downloader.png" width=600 />
 </p>
 
 <p align="center">
@@ -15,9 +14,6 @@
 </a>
 <a href="http://cocoapods.org/pods/NicooM3u8Downloader">
 <img src="https://img.shields.io/cocoapods/p/NicooM3u8Downloader.svg?colorB=cf649a" alt="Platforms">
-</a>
-<a href="https://github.com/Carthage/Carthage">
-<img src="https://img.shields.io/badge/Carthage-Compatible-brightgreen.svg" alt="Carthage">
 </a>
 <a href="https://swift.org/package-manager/">
 <img src="https://img.shields.io/badge/Swift%20Package%20Manager-ready-orange.svg" alt="Swift Package Manager">
