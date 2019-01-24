@@ -4,7 +4,34 @@
 [![Version](https://img.shields.io/cocoapods/v/NicooM3u8Downloader.svg?style=flat)](https://cocoapods.org/pods/NicooM3u8Downloader)
 [![License](https://img.shields.io/cocoapods/l/NicooM3u8Downloader.svg?style=flat)](https://cocoapods.org/pods/NicooM3u8Downloader)
 [![Platform](https://img.shields.io/cocoapods/p/NicooM3u8Downloader.svg?style=flat)](https://cocoapods.org/pods/NicooM3u8Downloader)
+<p align="center">
+<img src="https://raw.githubusercontent.com/hipposan/LemonDeer/master/Resources/LemonDeer-logo.png" width=600 />
+<p align="center"><i>Make m3u8 parse and video download as white magic.</i></p>
+</p>
 
+<p align="center">
+<a href="http://cocoapods.org/pods/NicooM3u8Downloader">
+<img src="https://img.shields.io/cocoapods/v/NicooM3u8Downloader.svg?colorB=7761c8" alt="Pods Version">
+</a>
+<a href="http://cocoapods.org/pods/NicooM3u8Downloader">
+<img src="https://img.shields.io/cocoapods/p/NicooM3u8Downloader.svg?colorB=cf649a" alt="Platforms">
+</a>
+<a href="https://github.com/Carthage/Carthage">
+<img src="https://img.shields.io/badge/Carthage-Compatible-brightgreen.svg" alt="Carthage">
+</a>
+<a href="https://swift.org/package-manager/">
+<img src="https://img.shields.io/badge/Swift%20Package%20Manager-ready-orange.svg" alt="Swift Package Manager">
+</a>
+<a href="https://swift.org/">
+<img src="https://img.shields.io/badge/Swift-3.0%2B-orange.svg" alt="Swift Version">
+</a>
+<a href="https://raw.githubusercontent.com/hipposan/LemonDeer/master/LICENSE">
+<img src="https://img.shields.io/github/license/mashape/apistatus.svg?colorB=dfca6c" alt="License">
+</a>
+<a href="https://twitter.com/zzy0600">
+<img src="https://img.shields.io/badge/Twitter-%40zzy0600-blue.svg" alt="Twitter">
+</a>
+</p>
 ## Example
 
 To run the example project, clone the repo, and run `pod install` from the Example directory first.
