@@ -1,0 +1,22 @@
+{
+  "name": "NicooM3u8Downloader",
+  "version": "0.1.0",
+  "summary": "A short description of NicooM3u8Downloader.",
+  "description": "TODO: Add long description of the pod here.",
+  "homepage": "https://github.com/yangxina/NicooM3u8Downloader",
+  "license": {
+    "type": "MIT",
+    "file": "LICENSE"
+  },
+  "authors": {
+    "yangxina": "504672006@qq.com"
+  },
+  "source": {
+    "git": "https://github.com/yangxina/NicooM3u8Downloader.git",
+    "tag": "0.1.0"
+  },
+  "platforms": {
+    "ios": "8.0"
+  },
+  "source_files": "NicooM3u8Downloader/Classes/**/*"
+}

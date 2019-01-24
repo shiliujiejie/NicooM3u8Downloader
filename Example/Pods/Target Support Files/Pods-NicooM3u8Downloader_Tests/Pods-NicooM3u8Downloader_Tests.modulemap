@@ -1,0 +1,6 @@
+framework module Pods_NicooM3u8Downloader_Tests {
+  umbrella header "Pods-NicooM3u8Downloader_Tests-umbrella.h"
+
+  export *
+  module * { export * }
+}

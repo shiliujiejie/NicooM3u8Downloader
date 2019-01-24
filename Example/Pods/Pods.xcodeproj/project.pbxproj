@@ -1,0 +1,2480 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		0071AEC949F85E453C92BB446DAE0D14 /* HTTPConnection.h in Headers */ = {isa = PBXBuildFile; fileRef = 6FC2A5E6EBD6115F66FAEF75C0F3FD5A /* HTTPConnection.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		00B2DA09AB6AB2A60F6CF26BB2CAA787 /* DDLog.h in Headers */ = {isa = PBXBuildFile; fileRef = 7AC89803C78DC35921EF95298FD51F20 /* DDLog.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		02CB9EDB7F6D7B1B6FA0119E732F5ADF /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0B2E624D5ABA199462F708C88B011A1A /* Foundation.framework */; };
+		02FE46561E36AD1F540C55FD3754D179 /* ConstraintPriorityTarget.swift in Sources */ = {isa = PBXBuildFile; fileRef = 124BF8433372CB0B96F98D2E8CD24CF0 /* ConstraintPriorityTarget.swift */; };
+		0368600B80F6BD668DA173CA12C38EB9 /* DDTTYLogger.m in Sources */ = {isa = PBXBuildFile; fileRef = C896614E5C6EC8E710D7F5B55BF1E124 /* DDTTYLogger.m */; };
+		06EA3E9FDFEC4C10B37AB49D22466079 /* SnapKit-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 9DA44B0E29AF01D2043B32BFDB232DBD /* SnapKit-dummy.m */; };
+		09548317A8359AF754F56B51A444D5DB /* Pods-NicooM3u8Downloader_Example-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = EF9A0E99582261E145266CB04F8284DC /* Pods-NicooM3u8Downloader_Example-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		099D7F88D22ABF720E10E0C597060EB5 /* NicooTsDownloader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 239EA1F44C53962C3DEC32E52A030DE0 /* NicooTsDownloader.swift */; };
+		09DCAE72CADB3D5CDAEE45447554D05C /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9F8CFB37719316F9735D7D0A402F21F8 /* Security.framework */; };
+		0CABEF4E8EB33FE9CC433EBF91080E7C /* HTTPFileResponse.m in Sources */ = {isa = PBXBuildFile; fileRef = DE8A8FCADF0AFEBCDDE5E5EDF3C46331 /* HTTPFileResponse.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		0E6F0D77D3B064D9DF84918D7FC1C0D7 /* NicooTsModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DAFA8F2D673163C16809F4C4F49CEDF /* NicooTsModel.swift */; };
+		0F30E394FBE6D7E0E23AF5D5F62ECE74 /* ConstraintViewDSL.swift in Sources */ = {isa = PBXBuildFile; fileRef = 579E720084E6C3181B42204E4AF33D92 /* ConstraintViewDSL.swift */; };
+		0F809632FF6FC6CBF4E730E43F8F166F /* DDAbstractDatabaseLogger.h in Headers */ = {isa = PBXBuildFile; fileRef = DD87B0B35822FAAC7624F082E6E3E553 /* DDAbstractDatabaseLogger.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		11E2C92E2AA7B07A019D1897F2C15033 /* player_close.png in Resources */ = {isa = PBXBuildFile; fileRef = 2EC3B91732F2EC48822DF993DCB1B14E /* player_close.png */; };
+		1211753F80137F3DF7B132852D706EFE /* NicooM3u8Downloader-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 62FFF789658AF7A679D1A2C3370E7233 /* NicooM3u8Downloader-dummy.m */; };
+		15D79E4D1AA4DD25E1FC701B379C42C3 /* ConstraintLayoutSupport.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7062CA25DC7CC1F03C3BE9E10052CF2 /* ConstraintLayoutSupport.swift */; };
+		19D86BB5F6F93BF1538C5697558DE802 /* play@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = D3576939B9727607E975322111CB2DDF /* play@3x.png */; };
+		1B7D6DA96833839C39617BD826AB106B /* NicooNetWorkAlert.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7DD5052FED10A4E3EAAA3324F1F97781 /* NicooNetWorkAlert.swift */; };
+		1C2BE1AF9082F82C2AE7B0600DD680E5 /* ConstraintRelatableTarget.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31C0823B41E79C2B439804208F9C56AF /* ConstraintRelatableTarget.swift */; };
+		1C47487F1488ABDD9DC9E52797389870 /* MultipartMessageHeaderField.h in Headers */ = {isa = PBXBuildFile; fileRef = F3450A42886D6F482D3179C8BA983F7A /* MultipartMessageHeaderField.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		1E70BEDA661D8683BED9377E5193395E /* ConstraintMakerRelatable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44950266EAF4A6080A37DD81CF6EBBDD /* ConstraintMakerRelatable.swift */; };
+		1EADEB30F808CA94D59BE5CDF31DA72E /* pause@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 0E0C6533DB2203FC1F3D799490A90824 /* pause@2x.png */; };
+		22A799C95A184005E50CDA0C9C8C5654 /* DDTTYLogger.h in Headers */ = {isa = PBXBuildFile; fileRef = E4686011A3D0154953CA1C9EBABFC738 /* DDTTYLogger.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		23175EA1EF2E7C6BE3DA76D541B4793B /* Constraint.swift in Sources */ = {isa = PBXBuildFile; fileRef = 337528B53AFDB3FD47C7846F692A17DF /* Constraint.swift */; };
+		238238853047C37CAC5238B9384B964A /* Typealiases.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B927E553C60776611ED988C60F2A339 /* Typealiases.swift */; };
+		2552D834A1B0057819C9ADB4746E59DF /* sliderflash@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 38931855971821E57D49231B6D5292AB /* sliderflash@2x.png */; };
+		2728CB00D6E65C00F15A2EA6581DBFA0 /* DDASLLogCapture.m in Sources */ = {isa = PBXBuildFile; fileRef = 4B33F066BF91D063C9AB2E5CBC6DB5E0 /* DDASLLogCapture.m */; };
+		2761E282A8B6AB787A3BF78CD8DE7C92 /* HTTPMessage.h in Headers */ = {isa = PBXBuildFile; fileRef = 160B2D41992BCDB2F98D68B28A2186CC /* HTTPMessage.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		276F082DA0A032AB6F2998B3A8E2FA96 /* CocoaAsyncSocket-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = F788C564C9D38D891A031DC6DE40D40A /* CocoaAsyncSocket-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		27CE7C456A381A0832C091B60C5C076D /* SnapKit-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = F837C6EC7344286B58CF54D0EEB58419 /* SnapKit-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		2B5F59B200E253E5D460CF735C51860A /* NicooTsListModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B82CB90000DB9101668724A9A355861 /* NicooTsListModel.swift */; };
+		2DD25467C20DCCDC7462E7E8841BFF27 /* share_hight@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 864702473A60FB84CB33E7F000B54796 /* share_hight@2x.png */; };
+		2E45DDE6211FDC0D7C7DDA645FD2D610 /* NicooPlayer_slider@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = E7A7F938A367B16FABE83DC67002B4D3 /* NicooPlayer_slider@3x.png */; };
+		30169A0026017D898DAC180CC3218F79 /* GCDAsyncUdpSocket.m in Sources */ = {isa = PBXBuildFile; fileRef = 9262910FDAD901B3580D7B91475561A8 /* GCDAsyncUdpSocket.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		31650FD0D39FDBB9B8E1260CDF6D14C8 /* backward@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 073A2E7565B7CF4A5B10C4ADFFD14046 /* backward@2x.png */; };
+		33D55D4F311552160881DB730ABE4EE6 /* ConstraintView+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E8C9DCB59059AE25EFBDAC7F0C89B50 /* ConstraintView+Extensions.swift */; };
+		3539CC7E03E0566FD505B77BC1DBD3B8 /* MultipartMessageHeader.h in Headers */ = {isa = PBXBuildFile; fileRef = 42C7EC36608A9B6ECE8C80AB4F3D0F62 /* MultipartMessageHeader.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		35DB2E1F4C0E083F209B727443E11E21 /* HTTPResponse.h in Headers */ = {isa = PBXBuildFile; fileRef = 52C5F21628184C96708F73196039393F /* HTTPResponse.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		35F16912E8675AC4C63424311C0DF20B /* Pods-NicooM3u8Downloader_Example-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 5051C8767763DE510739E9A00BD17939 /* Pods-NicooM3u8Downloader_Example-dummy.m */; };
+		3B6C5A77B7EB2A871DFC6C63D88C4DDC /* HTTPFileResponse.h in Headers */ = {isa = PBXBuildFile; fileRef = 339A035300D755DB0DCA0B25B54260A3 /* HTTPFileResponse.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		3C4E790D8EE3A57E9CAEABAC348CDAF4 /* SnapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CBA454554D5CBED7E5FC0D30A6E49AF5 /* SnapKit.framework */; };
+		3E8C76DB3F0D84D59A3201564AE7E0E2 /* PUTResponse.h in Headers */ = {isa = PBXBuildFile; fileRef = 8360950CA12CA7F78A217779BF753DD8 /* PUTResponse.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		3EBB8EC00BAA153C91707ACEFDFF5CA6 /* Pods-NicooM3u8Downloader_Tests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 246CD4A206D471887106CFFF3811493B /* Pods-NicooM3u8Downloader_Tests-dummy.m */; };
+		3F0C1478DD19A7FB9E9F3928EBDAB4EC /* DDMultiFormatter.m in Sources */ = {isa = PBXBuildFile; fileRef = C8921CC01194E280A28435786D8F314E /* DDMultiFormatter.m */; };
+		3F117FFD6021A389039E9BC45E53E283 /* forward@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 9378763329FA14B93A3BEAB81BC528A0 /* forward@2x.png */; };
+		3FE7088956A525089C38C5862E8ABF87 /* DAVResponse.h in Headers */ = {isa = PBXBuildFile; fileRef = CC3600089E292AF49DCC2854D3903F67 /* DAVResponse.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		4160F5B43923858F6D5609D8C6325D48 /* ConstraintItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A3D66E53C24ABD3DE913DAD2D00BC69 /* ConstraintItem.swift */; };
+		41D5ABC3A3718B7D3B85148EF5758B3D /* WebSocket.h in Headers */ = {isa = PBXBuildFile; fileRef = 9B804025A6284D4989907B18BDA8E5DA /* WebSocket.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		44446460BAF6FE2CBBD997C01AABB232 /* NicooYagor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 471EC095966A039E8C151B9C072AF823 /* NicooYagor.swift */; };
+		45BAD35C457BF82A44C5269FD3396994 /* NicooVideoDownloader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13D89BBC67598785062928DB9FACDFBC /* NicooVideoDownloader.swift */; };
+		46658A254D636A8047209CFF71516C27 /* ConstraintMakerFinalizable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EC06856E4DA0AF3D01A0BE7B3DC599E /* ConstraintMakerFinalizable.swift */; };
+		47A815759793DEBA29BC6145485A4801 /* ConstraintMakerExtendable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DF1D3FE3355CCD9BD90FA589ECF23BB /* ConstraintMakerExtendable.swift */; };
+		483550818D9DB29960A3C0A4EDBEAA0F /* back@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 431EE4F23E0659162573B09E8D86085B /* back@2x.png */; };
+		4AE9F3F410ECC6787944021641543E5F /* CocoaLumberjack-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 7D6C30A930E42A8258016E8AD5D06E58 /* CocoaLumberjack-dummy.m */; };
+		4B852F8A2B6634AB192C2C01FB6F9587 /* HTTPServer.h in Headers */ = {isa = PBXBuildFile; fileRef = 0C999FFD7ABB7BB711996324A8611495 /* HTTPServer.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		4EB100FF9229539CA4094551779BF2BE /* CocoaAsyncSocket-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 9387252A5D234B935D324B5B311D0BE4 /* CocoaAsyncSocket-dummy.m */; };
+		50D5DA90F8F9EA36F2774893C96207E1 /* ConstraintConstantTarget.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B33DDA9F7B1BFE51227ACBAEB7ED375 /* ConstraintConstantTarget.swift */; };
+		51CFAC1F719227112B0A296AD7FFC45C /* DDLogMacros.h in Headers */ = {isa = PBXBuildFile; fileRef = 4BE0B0982D72F036A7C937340EF3A488 /* DDLogMacros.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		54978F52F781CE79EB51C69C51DFF051 /* Debugging.swift in Sources */ = {isa = PBXBuildFile; fileRef = C62A8AF7BECDF4FE84D41AC40E2AF1E6 /* Debugging.swift */; };
+		55B732A6B14AF9E751326D406E85E7F4 /* Player_pause@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 8401C9C9D4B1518E5D44DBF23358A18E /* Player_pause@3x.png */; };
+		5895FC7BBC49245B133174D8C3A1C869 /* NicooPlayer_fullscreen@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 221D1B9863FF05AFD1AF89576C5C7AE6 /* NicooPlayer_fullscreen@3x.png */; };
+		58D70EFB271E5D8C3F7BF83306702018 /* NicooAssetResourceLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7B89134764F6D5B74B00435438F9BB6 /* NicooAssetResourceLoader.swift */; };
+		5A7FB220667778067D81415311635C8D /* CocoaLumberjack-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = C83CBCE1F8E51EE1DC6FD80956F4AAB0 /* CocoaLumberjack-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		5AB985E8F37D314601A6DBF21113A4C3 /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E8AB897E4286F5F6F614D5C6DF8FB21D /* CFNetwork.framework */; };
+		5D40E76D7B63EAB656C38465C0FA82EC /* back@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 1962DD7A6A0588A069F83B21F0D10B4D /* back@3x.png */; };
+		5F139CED69BE7108D2FB62A92D362919 /* NicooPlayer_fullscreen.png in Resources */ = {isa = PBXBuildFile; fileRef = C92904F8B630D4D60C9780F6EE62F4E2 /* NicooPlayer_fullscreen.png */; };
+		5F76B3775C0E43288A0C46B9F627359D /* player_close@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = C9F310A5AFC99E27130AD6591D04EA90 /* player_close@3x.png */; };
+		6034CA818DAE2F234FC81AD94F643973 /* DDOSLogger.h in Headers */ = {isa = PBXBuildFile; fileRef = 8B965E0C340AD3FC3AC064F0AF959CFE /* DDOSLogger.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		6194C25DF09863EF003205354C17EE00 /* ConstraintLayoutGuide+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF67279F56B8F25583B572D7C3CD209F /* ConstraintLayoutGuide+Extensions.swift */; };
+		61CA1ABFB5C79F6150B3E51C90CEFCE4 /* DDDispatchQueueLogFormatter.m in Sources */ = {isa = PBXBuildFile; fileRef = BB8491AA2610AFB2CA37C6790A7DF0A6 /* DDDispatchQueueLogFormatter.m */; };
+		6405C9FC5787A8E0F6BFE6ED6F7A691F /* pause@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = E8D384A9A99A6EAF452894A740268E26 /* pause@3x.png */; };
+		6483761D441DCE875FECB403FB1BBC50 /* ConstraintAttributes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D59D9C52A458FDE7001CA2522E86184 /* ConstraintAttributes.swift */; };
+		65E247CE801427200FE3AA6C3A876E79 /* DDAssertMacros.h in Headers */ = {isa = PBXBuildFile; fileRef = 11156CC236B5805F3D5FB8EA82617CA7 /* DDAssertMacros.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		66298E62CE831C4B702A53DBB44ED8F0 /* MultipartFormDataParser.m in Sources */ = {isa = PBXBuildFile; fileRef = AA9CF20734E16E8076D44255B9284A4E /* MultipartFormDataParser.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		68323C5CD63706D58551EF53BD47C3CE /* ConstraintDSL.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01A09C598287403564231149B63B7020 /* ConstraintDSL.swift */; };
+		69206852B5721C2BA4596E26977090E3 /* NicooPlayerOrietation.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDE89E46D4BD1CDFBF3623BC70094441 /* NicooPlayerOrietation.swift */; };
+		6C0A12B63E196DCDA7E4E14BF2118AE3 /* replay@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 0B83FCA0AA6DDC2236E8210A96F93E74 /* replay@2x.png */; };
+		6C79B5B7919CFC3C3A6F0361BDC999F7 /* DDData.m in Sources */ = {isa = PBXBuildFile; fileRef = 36F4A09D314B5B0B43C89E0A74FF11AA /* DDData.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		6D0F573033F65511431CB5EC3A8A7328 /* PUTResponse.m in Sources */ = {isa = PBXBuildFile; fileRef = E366A76108ECB74142692A35547C7018 /* PUTResponse.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		6ED30BEE8EAEFEABD52A3BDC8501923E /* DDDispatchQueueLogFormatter.h in Headers */ = {isa = PBXBuildFile; fileRef = 7348A4C9821E5A97DC53DB541EC4D786 /* DDDispatchQueueLogFormatter.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		7031F5A32251E6CA6B796616A3EACADB /* NicooPlayerControlView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24D841D62111D7E08B5BACD83FBBBD2D /* NicooPlayerControlView.swift */; };
+		736463C7BAEC936E2EFB4435AEB93DFA /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E8AB897E4286F5F6F614D5C6DF8FB21D /* CFNetwork.framework */; };
+		744FDD16087F96F15E56306BFB137C74 /* ConstraintLayoutGuideDSL.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41406CD32957521961C5E50BFE4EFEE8 /* ConstraintLayoutGuideDSL.swift */; };
+		74F55881173320A9D7D53050ABB99D8F /* HTTPRedirectResponse.h in Headers */ = {isa = PBXBuildFile; fileRef = C78A34ADB01F17BBC599705A811318B6 /* HTTPRedirectResponse.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		78323653C1B41AC0E40FB8D1D7955B5A /* sliderflash.png in Resources */ = {isa = PBXBuildFile; fileRef = 5E4657B7A0D72D04FC4B85D90B191C76 /* sliderflash.png */; };
+		794B2E2980B60E6C24318C96C79C81BF /* HTTPConnection.m in Sources */ = {isa = PBXBuildFile; fileRef = B0CE0B413BD9A8711A115C24CF839DA9 /* HTTPConnection.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		7A30324DF205553C13AE21497DB11056 /* Player_pause@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 1EC5B2F68FDDFB73306D87227DAC8F69 /* Player_pause@2x.png */; };
+		7BC62F6BD38FCEF56D3E6341FF133C2F /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9F8CFB37719316F9735D7D0A402F21F8 /* Security.framework */; };
+		7DEDF288DD0C6DFA15C0AFF2CC6BE116 /* HTTPAsyncFileResponse.m in Sources */ = {isa = PBXBuildFile; fileRef = 314D8CBD7D280D71D8A39AC5AD46652B /* HTTPAsyncFileResponse.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		7EF7A12B3F8245CE63E8C2628107DC56 /* DDOSLogger.m in Sources */ = {isa = PBXBuildFile; fileRef = 86F3366DB89B1D9EA7F2BC4B70D71DD9 /* DDOSLogger.m */; };
+		7F3A04E378949FFC9A0E11CFE2C2C418 /* shrinkScreen@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 118BCF95F2EF7532438DEDBA076E66CA /* shrinkScreen@3x.png */; };
+		7F929F6B345C42E5FEC0D6C52A36A938 /* NicooBrightnessView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E1DC8B43D15A3D72584BB80CDC6479A /* NicooBrightnessView.swift */; };
+		7FAE73EA22F0C6D7E275D445EABC927A /* ConstraintConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13503C2E195A4569FDFFDA001B663F68 /* ConstraintConfig.swift */; };
+		808AF2E77430460EBFBC5C632BD98CEA /* player_close@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = CA3C6566FB8329B558766768368AF91F /* player_close@2x.png */; };
+		844B0B94FC337363B0EA6A8D081CAFD4 /* NicooPlayer_fullscreen@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 6613530D248E41282122692162D16817 /* NicooPlayer_fullscreen@2x.png */; };
+		84D92FC60D98C077AB3A6D56AEBE8FEB /* GCDAsyncSocket.h in Headers */ = {isa = PBXBuildFile; fileRef = 50FECFAC5369B7663A84008425FD01F0 /* GCDAsyncSocket.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		8561E1F85935784712953F2EC1322FC0 /* DDRange.h in Headers */ = {isa = PBXBuildFile; fileRef = AE7DCC37FA5655CB2E6513BB263A54F0 /* DDRange.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		8587FCA258513CF0DD2A880E7915A845 /* DDFileLogger.h in Headers */ = {isa = PBXBuildFile; fileRef = 06DE06A258816B8BFAE84A6D0CBAC45D /* DDFileLogger.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		87AC67D4C896AB5B2C43A267781D3BF3 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0B2E624D5ABA199462F708C88B011A1A /* Foundation.framework */; };
+		88C56B19FDF52B0B14797574AFF7C476 /* NicooPlayer-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 8A4A9DCFFEAB76B3E98E079F398E392D /* NicooPlayer-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		8A788F680F7EAC8DC318A597B9CEA690 /* unlock@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 8CF1DFF1867D9D50276C6C8956913100 /* unlock@2x.png */; };
+		8B95F1E4D5493002B72AD111B696C139 /* LayoutConstraint.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3197FE94E39E1F5AA48EB21AC012819B /* LayoutConstraint.swift */; };
+		8C0628C348D0036B15A1F5D97ED1BBFD /* play@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = B86A1AF1AC6396FEFF01AC495960D982 /* play@2x.png */; };
+		8C589C8886BE196C79CF17607A21A3AF /* NicooPlayer_slider.png in Resources */ = {isa = PBXBuildFile; fileRef = DF6424845FD6CAE78013456EB90FC5EB /* NicooPlayer_slider.png */; };
+		8D15A4F2AC90099A2C24A9CC2DC5EE3C /* DDASLLogger.h in Headers */ = {isa = PBXBuildFile; fileRef = AC42FB248006097B15005DDD049DF1E6 /* DDASLLogger.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		8D7924506B15C24EB2D25353D2F7592D /* HTTPServer.m in Sources */ = {isa = PBXBuildFile; fileRef = 76E46F7927AADD440487B53FBF75BE19 /* HTTPServer.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		8F9C778A15FC2DC6603A359761D2FC33 /* DELETEResponse.h in Headers */ = {isa = PBXBuildFile; fileRef = 237EB6693F7456AA8F37342FF66A807C /* DELETEResponse.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		92C06D6ADBDB0C54B5ECE91DF8FA318C /* HTTPLogging.h in Headers */ = {isa = PBXBuildFile; fileRef = 7368AA9AA953E35084A2234F3077B0CA /* HTTPLogging.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		945DDD83B4F79DBBF74111D7CE8C7310 /* replay@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 08DDED145EAB42DABB0B8799BB5459D8 /* replay@3x.png */; };
+		946B8DE90A7C6B3872C82AA2AF240118 /* GCDAsyncUdpSocket.h in Headers */ = {isa = PBXBuildFile; fileRef = 79823E7A7AB2B9DCB73FAC3C19EE66EF /* GCDAsyncUdpSocket.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		948977D2A72EA5C894BC680802B7ED11 /* ConstraintDescription.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43CFFFBB94C7E7E8B2FA68DD2A4B92C7 /* ConstraintDescription.swift */; };
+		95D6C19862B6441AC1DF2BBD76B3D513 /* unlock@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = F733D212BA03EFEF1DA8ECDD5C47AAD1 /* unlock@3x.png */; };
+		969566489C9E0F50BB5D4C61283BA30A /* back_hight@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 2B78CF018E496A2BD394A4E660884DA1 /* back_hight@2x.png */; };
+		97A2960E35E3247D55CD716AA995253B /* DAVResponse.m in Sources */ = {isa = PBXBuildFile; fileRef = 03F9DA50FBF94DD7D359D9388B57C611 /* DAVResponse.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		987621B759BC0CB7FB40E57AB0BCDB03 /* DAVConnection.h in Headers */ = {isa = PBXBuildFile; fileRef = CD5D22B4D46CFB84155CBD282C5CA6A1 /* DAVConnection.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		9ABEDA4D5511849C565F55ED86AE6632 /* MultipartMessageHeader.m in Sources */ = {isa = PBXBuildFile; fileRef = 778AA29960C6525896508AD133EE2E57 /* MultipartMessageHeader.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		9AF3C0481DD8DB4A59CBDC40FC31E4BF /* ConstraintMaker.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8F12C3FB41AF075653B119D6EB44577 /* ConstraintMaker.swift */; };
+		9B83BFFFCCB876DD61377A279EFE64AF /* forward@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = C96B80460E260288FF1C9FBD9F0710F6 /* forward@3x.png */; };
+		9CFFA1EEFC04D8AAD4158E5C584D49D8 /* replay_hight@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 1C0E5CFCD74AC3D75F7F76A99DD57862 /* replay_hight@2x.png */; };
+		9E130F7204E56100B532B8AB9C90F671 /* LayoutConstraintItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = B378FE64B181FC08812BE4DDE5D85A31 /* LayoutConstraintItem.swift */; };
+		9E353EBE79F1A486F7D18A428C6B4C6F /* CocoaHTTPServer-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 33D26626296FE34CEF12AFEF4EA9DC2D /* CocoaHTTPServer-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		9FD15B9001391F8BF5038244B6E06146 /* MultipartMessageHeaderField.m in Sources */ = {isa = PBXBuildFile; fileRef = 769BFA9D625250077D323B224C584214 /* MultipartMessageHeaderField.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		A03FFBD008E31B73B2FBE0301B2140BF /* DDLog.m in Sources */ = {isa = PBXBuildFile; fileRef = E450F7E5910DDB368150A5D4CFEF6B87 /* DDLog.m */; };
+		A15EF2BCCD786DABDBBD8BCA78CF5FCC /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0B2E624D5ABA199462F708C88B011A1A /* Foundation.framework */; };
+		A1643433CE02E5D99B07667D95F35666 /* DDContextFilterLogFormatter.h in Headers */ = {isa = PBXBuildFile; fileRef = 9A5C46F7A09E258FA3D9AC3F5E70E25A /* DDContextFilterLogFormatter.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		A1B33C6938000B6577177B2044987B59 /* DDLog+LOGV.h in Headers */ = {isa = PBXBuildFile; fileRef = 1E1DEE2D002E350C8070E0A7287F81F8 /* DDLog+LOGV.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		A1DBFC083FBC1229DC8DCFEF86927BF2 /* ConstraintView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5F4B984BF810D4F607B8C25F9C870FE /* ConstraintView.swift */; };
+		A3FBD50977D7D596D3F3DCCA7747CAF6 /* WebSocket.m in Sources */ = {isa = PBXBuildFile; fileRef = 4ED80633395861599D3A9CC794E1A145 /* WebSocket.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		A4355AB3E25E2312652DF94D86470AC8 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0B2E624D5ABA199462F708C88B011A1A /* Foundation.framework */; };
+		A64436FBA54C2782D2CC15B52CF63829 /* ConstraintMakerEditable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1ECEA310EABC5AB1BD45E8ED64331A3D /* ConstraintMakerEditable.swift */; };
+		A649D23DE2E89BD20658A3338E76C9D0 /* ConstraintMultiplierTarget.swift in Sources */ = {isa = PBXBuildFile; fileRef = B40F1B311B1EF63754608758FF618B17 /* ConstraintMultiplierTarget.swift */; };
+		A76989CE17F0DA6AED1CA6C65D346580 /* ConstraintRelation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09D6246763C0AA98FD836CE5C4549680 /* ConstraintRelation.swift */; };
+		A7E0C88B2B04A3240FFCDA9DCE13FE6A /* NicooPlayer_slider@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 18CE6228AF9E7289CC0145D0209652E0 /* NicooPlayer_slider@2x.png */; };
+		AB655E0053E80F9583F0DBE136F8DDDD /* CocoaLumberjack.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2F81ADF53E0DCDCD465D6C33841773EA /* CocoaLumberjack.framework */; };
+		AB780511D7B4C5071A467FEA6CAB7C75 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0B2E624D5ABA199462F708C88B011A1A /* Foundation.framework */; };
+		AC166C66311BCAAAD1D9289A80E51CCF /* GCDAsyncSocket.m in Sources */ = {isa = PBXBuildFile; fileRef = 228B086730AB15AF27344BBD4B958F94 /* GCDAsyncSocket.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		AC5E73427BCDF9B4D65A618854DB03A4 /* shrinkScreen@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 875423DCDDF308A4A5A20EF6DEF17336 /* shrinkScreen@2x.png */; };
+		AC645E0DD9EC720AD59ABA9AD4BBA23A /* NicooPlayerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16737C8AC22476E7840C2735675952DD /* NicooPlayerView.swift */; };
+		AD9FF81CFBE9D1D0EA539BBAA01583EE /* DDMultiFormatter.h in Headers */ = {isa = PBXBuildFile; fileRef = 5075BA0984F2916B35993A2C25430E5B /* DDMultiFormatter.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		ADCBC3BEF7A476686A69B769E55F4DEC /* DDAbstractDatabaseLogger.m in Sources */ = {isa = PBXBuildFile; fileRef = 37E896A039B1A367882D0D6E6A6A5322 /* DDAbstractDatabaseLogger.m */; };
+		B64D38EE4981701B657D86B24F7556C9 /* player_brightness@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 8222CCCD6FDA5A11481F94CA8C809E26 /* player_brightness@2x.png */; };
+		B7BAA3EBF5068068AAAC4676073DAF9E /* share@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 4C6121782A0FCC55E218DA523A457C80 /* share@2x.png */; };
+		B8822708669491CFE2D3CF36D200B6FD /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0B2E624D5ABA199462F708C88B011A1A /* Foundation.framework */; };
+		B8AC4C0231C87380BA5353B4BBC19982 /* NicooDownloadHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = D57187A51EAA8712DF07D728D48DAE41 /* NicooDownloadHelper.swift */; };
+		BBAFAF2ED24E85DCF693DF39C519350D /* NicooImgManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF221E7113D31EBFB49A193528903068 /* NicooImgManager.swift */; };
+		BC7A5354F99DCF0118A107612342FB42 /* HTTPMessage.m in Sources */ = {isa = PBXBuildFile; fileRef = B0639D0E2AAC557F605E478FC831277C /* HTTPMessage.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		BCF09463716EFDAF623A79B9D5255E2C /* share@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = EFEE94603A55802957FA53578DEAF87B /* share@3x.png */; };
+		BDFB27413838E8FEC62D638C7EBD692F /* DDASLLogCapture.h in Headers */ = {isa = PBXBuildFile; fileRef = 9D28DC561DEDA71A40F584557A258A5C /* DDASLLogCapture.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		BE6CE881C6572B686C7961788E4C3BC5 /* share_hight@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 50151C7EC5B8A40D12B3668F24B45865 /* share_hight@3x.png */; };
+		BE70029E33315240B9E1B6A755A510D6 /* DDRange.m in Sources */ = {isa = PBXBuildFile; fileRef = 22C37C7D73A0C1320FBC446EA6D0C5F3 /* DDRange.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		C1E4BFA564DA2F893EA19389D6B3B6D7 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0B2E624D5ABA199462F708C88B011A1A /* Foundation.framework */; };
+		C3D35EB19E7AEDF6C6C5E7505512CAD2 /* NicooVideoRequestTask.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4DC6B731DF9B189485FFCE856168BAC /* NicooVideoRequestTask.swift */; };
+		C4644F22A4671A214816B2DE192F9497 /* UILayoutSupport+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDD18498A3AD7C9D004C66C414030E53 /* UILayoutSupport+Extensions.swift */; };
+		C4731FBC52118A47929BB354A46C65DF /* DDASLLogger.m in Sources */ = {isa = PBXBuildFile; fileRef = 8A283413F6E6A6DEB9BEF9ACADF80F53 /* DDASLLogger.m */; };
+		C4D09DE3302182DF69B37EC6948B149A /* DDFileLogger.m in Sources */ = {isa = PBXBuildFile; fileRef = EF5B4F56C0A8F7C15ABEA345513B785D /* DDFileLogger.m */; };
+		C676B90AC87268BA00BA09C776E571E0 /* replay_hight@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 9DB3488E545274295B0985169F8FD2AE /* replay_hight@3x.png */; };
+		C93291E9C4544637AAA8E4A90F95EC8E /* NicooPlayer-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C71562CD19A7BCC2D86B94D308B3061 /* NicooPlayer-dummy.m */; };
+		C9F86094B8144E050997AFFC893A2D50 /* back_hight@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 1E66E4466FD0E30BC3704EC94963BB42 /* back_hight@3x.png */; };
+		CDE9C3FCF57D646FEADCE6ACDCD5DC92 /* DAVConnection.m in Sources */ = {isa = PBXBuildFile; fileRef = 38C6E0C44E029C4DC0038207D8AF338E /* DAVConnection.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		CFBB55A21DA77BD2C550FB221CEAA669 /* ConstraintInsetTarget.swift in Sources */ = {isa = PBXBuildFile; fileRef = 402F051B35AC1ABA37F8FA41B4D5B9CC /* ConstraintInsetTarget.swift */; };
+		D2A8605EE5DE421D881C5DBA81929274 /* HTTPDataResponse.m in Sources */ = {isa = PBXBuildFile; fileRef = 73859D7473E6709AC4257E8451EF7A79 /* HTTPDataResponse.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		D3878105F53ACDC7006EE04ABAE1C144 /* CocoaHTTPServer-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 457E6514336510A642E32290A2F70F77 /* CocoaHTTPServer-dummy.m */; };
+		D46F3CD3DC4CB3E6E8912719961401DC /* ConstraintLayoutGuide.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2950D421EB70F7DA6BF9AD6EF8BB9E93 /* ConstraintLayoutGuide.swift */; };
+		D4B702456CF3401B83C491B6CA278BC3 /* Pods-NicooM3u8Downloader_Tests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 35F58710C0433C8A8B7C9B7D9DC34308 /* Pods-NicooM3u8Downloader_Tests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		D4CFAD86B7C003528BC2B92F4B8EADEA /* CocoaAsyncSocket.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B3F4A5C4EF50AD5D3594760481162845 /* CocoaAsyncSocket.framework */; };
+		D835C27379BF35EA3096A687162F2134 /* ConstraintInsets.swift in Sources */ = {isa = PBXBuildFile; fileRef = 197343C9CD6CC5E6E44E529B50636313 /* ConstraintInsets.swift */; };
+		D83D2E7D4EBE424C5EDB78320269539D /* NicooM3u8Downloader-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 400F235223EB86EB28239EF9A973AB67 /* NicooM3u8Downloader-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		D9A39AB2EDE7D1834CB132411F006C78 /* NicooPlayer.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 215CD396F662A9961CD4D28E3D8D1E72 /* NicooPlayer.bundle */; };
+		DA42D9D50952CDB4EB66ADACDCB0F6CA /* DDLegacyMacros.h in Headers */ = {isa = PBXBuildFile; fileRef = B2753D4581428760BED38FBE2D036478 /* DDLegacyMacros.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		DCD0E6A2881E01179AFF3F513EA02870 /* DDNumber.h in Headers */ = {isa = PBXBuildFile; fileRef = D8F6C12B2E70B93DD152EE89CEFC6526 /* DDNumber.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		E293480982AE2CF8033DB29730F8E351 /* NicooLoadedFailedView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE17D5A67C643BA61A8966B43D46AC12 /* NicooLoadedFailedView.swift */; };
+		E29E114EC9B7024DE6714CB9C81F2503 /* NicooM3u8Parser.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF85956D0B75C965CE0F3116F12F7B63 /* NicooM3u8Parser.swift */; };
+		E2C5BB75EB0D86A798C70EA72228E172 /* ConstraintLayoutSupportDSL.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D7573BE92F53F807FA270CD9AB46437 /* ConstraintLayoutSupportDSL.swift */; };
+		E2F6D2E2C6AB02F997CDA85E32F9907D /* sliderHightLight.png in Resources */ = {isa = PBXBuildFile; fileRef = 889DB9E6B7F5B314A78175707FF23880 /* sliderHightLight.png */; };
+		E304DF00BD5F77FC582576D249DF088C /* ConstraintOffsetTarget.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0C3CB06EE7715813B90A4803BCDC8B2 /* ConstraintOffsetTarget.swift */; };
+		E56F3062F45FB5DA915200695E985019 /* HTTPDataResponse.h in Headers */ = {isa = PBXBuildFile; fileRef = 0C1D1C8FDD877668792E5BC0B3352C86 /* HTTPDataResponse.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		E6DB4B2856050E0BCF01E9A25D74A1B4 /* lockscreen@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 19BAAF3FD5DDBF99A2D9C8555C9E5FAE /* lockscreen@3x.png */; };
+		E84050DF145F2FDB929D8C0BF05D8EE8 /* MultipartFormDataParser.h in Headers */ = {isa = PBXBuildFile; fileRef = E594F285E3C38B441DC1BC0E3D735567 /* MultipartFormDataParser.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		EB20DA674587BBF355D1BEE3B91085B9 /* HTTPAsyncFileResponse.h in Headers */ = {isa = PBXBuildFile; fileRef = 99520F5861C9C97CCE5407356059ED4F /* HTTPAsyncFileResponse.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		EDF1640E3702085DED7B671FCFBFAFEE /* HTTPDynamicFileResponse.m in Sources */ = {isa = PBXBuildFile; fileRef = 684AFE0AFE97CD2EB434DF2E7E5E0481 /* HTTPDynamicFileResponse.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		EE2262242768D4E7CDB921CCE3CC0DDB /* HTTPRedirectResponse.m in Sources */ = {isa = PBXBuildFile; fileRef = 6CF10449D12480E06A27ACF7BD18A9CA /* HTTPRedirectResponse.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		F04609FE7BFF1098095BC953E3C9C6D4 /* HTTPAuthenticationRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = B099AE5E67E53698FB595442C1EEF279 /* HTTPAuthenticationRequest.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		F088AB5BD686396774334E5C26558BA8 /* HTTPAuthenticationRequest.h in Headers */ = {isa = PBXBuildFile; fileRef = 78862DF9AC0885258B7F6E5AE84D2FD0 /* HTTPAuthenticationRequest.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		F1B6DEFB0A7AE942E7250D7BF6604467 /* CocoaLumberjack.h in Headers */ = {isa = PBXBuildFile; fileRef = 661C1D392E6AB9A46D912FD8AB40E0F7 /* CocoaLumberjack.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		F1C348BC3654228589EBB1C209559180 /* DELETEResponse.m in Sources */ = {isa = PBXBuildFile; fileRef = 9264020A682EDFB3F0DC0061076D980B /* DELETEResponse.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		F22104CECA43D949EC04AED41D0C414C /* HTTPDynamicFileResponse.h in Headers */ = {isa = PBXBuildFile; fileRef = 099EF56C76FF89D6E69BA08E628586BF /* HTTPDynamicFileResponse.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		F23F0B651BA12FC9D6E6EED31C18A013 /* sliderflash@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 35931B81E2062FB1D747F9FCAB5D6CD7 /* sliderflash@3x.png */; };
+		F3D8383F62E62A3C78408939F305C427 /* backward@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 96F3AE1F5A162B4F7B3BB4FF2E5DF87A /* backward@3x.png */; };
+		FA5CE98BE8651133214F7F1B9EB2DE6B /* DDData.h in Headers */ = {isa = PBXBuildFile; fileRef = 87908CF93BADE442A383C8021C50ACC6 /* DDData.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		FA994DE20E8286E0D1048335F7420FFD /* ConstraintPriority.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFAC1EA0B00A8A6C91F4CA6117E1E23F /* ConstraintPriority.swift */; };
+		FAB0B9DF45F6E60CB117F8A71A629F97 /* lockscreen@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = FE18C65BDE1B164DD9E0FB441B6FF21D /* lockscreen@2x.png */; };
+		FC3A598EDF86708280832CDBFF254939 /* DDContextFilterLogFormatter.m in Sources */ = {isa = PBXBuildFile; fileRef = 82F79948A0B26708897BF2E66BB279CC /* DDContextFilterLogFormatter.m */; };
+		FCA070320CCC4BFE2CE8742523D9577D /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0B2E624D5ABA199462F708C88B011A1A /* Foundation.framework */; };
+		FD1FA9B52A43DDDFA40FDBDE0A1D0AF3 /* DDNumber.m in Sources */ = {isa = PBXBuildFile; fileRef = B2AF35031DEF13E7FC633D7A80301331 /* DDNumber.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		FDB1B5B11C85A7E46D235FC4F002E5E7 /* ConstraintMakerPriortizable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 870D1F0F68CD00A328A14B558B0E6EA2 /* ConstraintMakerPriortizable.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		06E0D1D75D66F64236E1577DEEE106C5 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 52647C16D181E0C5C4058FF161452E7D;
+			remoteInfo = SnapKit;
+		};
+		0B9EC56FE2AD0775A696F86D4D759D73 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 18B8DB3EFA45F9069CDF5B554425973E;
+			remoteInfo = NicooPlayer;
+		};
+		1F7AD843A5B63BAB254B8189CAA891C8 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = EB9F16A11CCB7B75DFD4C14783C83019;
+			remoteInfo = CocoaAsyncSocket;
+		};
+		2FEA9E33732160B90F4FF6F18979B324 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 18279A9E612B206865EEBFC4651DDBB5;
+			remoteInfo = "NicooPlayer-NicooPlayer";
+		};
+		522E87D8F2F608FE4090ADF820BE5DA9 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = EB9F16A11CCB7B75DFD4C14783C83019;
+			remoteInfo = CocoaAsyncSocket;
+		};
+		63DD4ACED6E0DE2E6E88B1A7D6E2985B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 149585F5448242F87D6440C89714A051;
+			remoteInfo = CocoaHTTPServer;
+		};
+		B38BB6BD30DAB11102FD7970B25DDDD9 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 8C764BFB6CE2AADE59C37127671BF588;
+			remoteInfo = NicooM3u8Downloader;
+		};
+		BB647F8AD82952CF022833D9CDE10497 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 52647C16D181E0C5C4058FF161452E7D;
+			remoteInfo = SnapKit;
+		};
+		C4AD51B2B5DA915AD18B80B3A0E78136 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = CA1C2C5192AC096C35F54C534DFD0403;
+			remoteInfo = "Pods-NicooM3u8Downloader_Example";
+		};
+		DB5F67BBC0A0BEF5B4F6AE4139F087DA /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 299EB6BF742F436C0AB66363EA68575A;
+			remoteInfo = CocoaLumberjack;
+		};
+		FDD451BB2AB987AD561F2B23F979A33E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 299EB6BF742F436C0AB66363EA68575A;
+			remoteInfo = CocoaLumberjack;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		01A09C598287403564231149B63B7020 /* ConstraintDSL.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ConstraintDSL.swift; path = Source/ConstraintDSL.swift; sourceTree = "<group>"; };
+		03F9DA50FBF94DD7D359D9388B57C611 /* DAVResponse.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = DAVResponse.m; path = Extensions/WebDAV/DAVResponse.m; sourceTree = "<group>"; };
+		052D995362DFDFE91AFB8F71CAC3FDF8 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		06DE06A258816B8BFAE84A6D0CBAC45D /* DDFileLogger.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = DDFileLogger.h; path = Classes/DDFileLogger.h; sourceTree = "<group>"; };
+		073A2E7565B7CF4A5B10C4ADFFD14046 /* backward@2x.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = "backward@2x.png"; path = "NicooPlayer/Assets/backward@2x.png"; sourceTree = "<group>"; };
+		07BBB0E45615ECB7B97372BF8C569D0A /* Pods-NicooM3u8Downloader_Tests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-NicooM3u8Downloader_Tests-acknowledgements.markdown"; sourceTree = "<group>"; };
+		08DDED145EAB42DABB0B8799BB5459D8 /* replay@3x.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = "replay@3x.png"; path = "NicooPlayer/Assets/replay@3x.png"; sourceTree = "<group>"; };
+		09229E762682E2CF37FB2787C2793E9B /* Pods-NicooM3u8Downloader_Tests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-NicooM3u8Downloader_Tests.modulemap"; sourceTree = "<group>"; };
+		099EF56C76FF89D6E69BA08E628586BF /* HTTPDynamicFileResponse.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = HTTPDynamicFileResponse.h; path = Core/Responses/HTTPDynamicFileResponse.h; sourceTree = "<group>"; };
+		09D6246763C0AA98FD836CE5C4549680 /* ConstraintRelation.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ConstraintRelation.swift; path = Source/ConstraintRelation.swift; sourceTree = "<group>"; };
+		0A3D66E53C24ABD3DE913DAD2D00BC69 /* ConstraintItem.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ConstraintItem.swift; path = Source/ConstraintItem.swift; sourceTree = "<group>"; };
+		0AF201D72A45BECD89F0A2E71116B23D /* CocoaLumberjack.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = CocoaLumberjack.modulemap; sourceTree = "<group>"; };
+		0B2E624D5ABA199462F708C88B011A1A /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		0B83FCA0AA6DDC2236E8210A96F93E74 /* replay@2x.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = "replay@2x.png"; path = "NicooPlayer/Assets/replay@2x.png"; sourceTree = "<group>"; };
+		0C1D1C8FDD877668792E5BC0B3352C86 /* HTTPDataResponse.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = HTTPDataResponse.h; path = Core/Responses/HTTPDataResponse.h; sourceTree = "<group>"; };
+		0C999FFD7ABB7BB711996324A8611495 /* HTTPServer.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = HTTPServer.h; path = Core/HTTPServer.h; sourceTree = "<group>"; };
+		0E0C6533DB2203FC1F3D799490A90824 /* pause@2x.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = "pause@2x.png"; path = "NicooPlayer/Assets/pause@2x.png"; sourceTree = "<group>"; };
+		10EAB9502934DFF65F551E52CB088FD8 /* NicooM3u8Downloader-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "NicooM3u8Downloader-prefix.pch"; sourceTree = "<group>"; };
+		11156CC236B5805F3D5FB8EA82617CA7 /* DDAssertMacros.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = DDAssertMacros.h; path = Classes/DDAssertMacros.h; sourceTree = "<group>"; };
+		118BCF95F2EF7532438DEDBA076E66CA /* shrinkScreen@3x.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = "shrinkScreen@3x.png"; path = "NicooPlayer/Assets/shrinkScreen@3x.png"; sourceTree = "<group>"; };
+		124BF8433372CB0B96F98D2E8CD24CF0 /* ConstraintPriorityTarget.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ConstraintPriorityTarget.swift; path = Source/ConstraintPriorityTarget.swift; sourceTree = "<group>"; };
+		13503C2E195A4569FDFFDA001B663F68 /* ConstraintConfig.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ConstraintConfig.swift; path = Source/ConstraintConfig.swift; sourceTree = "<group>"; };
+		13D89BBC67598785062928DB9FACDFBC /* NicooVideoDownloader.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = NicooVideoDownloader.swift; path = NicooM3u8Downloader/Classes/NicooVideoDownloader.swift; sourceTree = "<group>"; };
+		160B2D41992BCDB2F98D68B28A2186CC /* HTTPMessage.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = HTTPMessage.h; path = Core/HTTPMessage.h; sourceTree = "<group>"; };
+		16737C8AC22476E7840C2735675952DD /* NicooPlayerView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = NicooPlayerView.swift; path = NicooPlayer/Classes/NicooPlayerView.swift; sourceTree = "<group>"; };
+		1741514E7FF5B550B12231007922A14F /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		18CE6228AF9E7289CC0145D0209652E0 /* NicooPlayer_slider@2x.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = "NicooPlayer_slider@2x.png"; path = "NicooPlayer/Assets/NicooPlayer_slider@2x.png"; sourceTree = "<group>"; };
+		1962DD7A6A0588A069F83B21F0D10B4D /* back@3x.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = "back@3x.png"; path = "NicooPlayer/Assets/back@3x.png"; sourceTree = "<group>"; };
+		197343C9CD6CC5E6E44E529B50636313 /* ConstraintInsets.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ConstraintInsets.swift; path = Source/ConstraintInsets.swift; sourceTree = "<group>"; };
+		19BAAF3FD5DDBF99A2D9C8555C9E5FAE /* lockscreen@3x.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = "lockscreen@3x.png"; path = "NicooPlayer/Assets/lockscreen@3x.png"; sourceTree = "<group>"; };
+		1B102D9536B63F397D7FDFC0F99CE7CF /* Pods-NicooM3u8Downloader_Tests-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-NicooM3u8Downloader_Tests-resources.sh"; sourceTree = "<group>"; };
+		1C0E5CFCD74AC3D75F7F76A99DD57862 /* replay_hight@2x.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = "replay_hight@2x.png"; path = "NicooPlayer/Assets/replay_hight@2x.png"; sourceTree = "<group>"; };
+		1E1DEE2D002E350C8070E0A7287F81F8 /* DDLog+LOGV.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "DDLog+LOGV.h"; path = "Classes/DDLog+LOGV.h"; sourceTree = "<group>"; };
+		1E66E4466FD0E30BC3704EC94963BB42 /* back_hight@3x.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = "back_hight@3x.png"; path = "NicooPlayer/Assets/back_hight@3x.png"; sourceTree = "<group>"; };
+		1EC5B2F68FDDFB73306D87227DAC8F69 /* Player_pause@2x.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = "Player_pause@2x.png"; path = "NicooPlayer/Assets/Player_pause@2x.png"; sourceTree = "<group>"; };
+		1ECEA310EABC5AB1BD45E8ED64331A3D /* ConstraintMakerEditable.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ConstraintMakerEditable.swift; path = Source/ConstraintMakerEditable.swift; sourceTree = "<group>"; };
+		215CD396F662A9961CD4D28E3D8D1E72 /* NicooPlayer.bundle */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; name = NicooPlayer.bundle; path = "NicooPlayer-NicooPlayer.bundle"; sourceTree = BUILT_PRODUCTS_DIR; };
+		221D1B9863FF05AFD1AF89576C5C7AE6 /* NicooPlayer_fullscreen@3x.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = "NicooPlayer_fullscreen@3x.png"; path = "NicooPlayer/Assets/NicooPlayer_fullscreen@3x.png"; sourceTree = "<group>"; };
+		228B086730AB15AF27344BBD4B958F94 /* GCDAsyncSocket.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = GCDAsyncSocket.m; path = Source/GCD/GCDAsyncSocket.m; sourceTree = "<group>"; };
+		22C37C7D73A0C1320FBC446EA6D0C5F3 /* DDRange.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = DDRange.m; path = Core/Categories/DDRange.m; sourceTree = "<group>"; };
+		237EB6693F7456AA8F37342FF66A807C /* DELETEResponse.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = DELETEResponse.h; path = Extensions/WebDAV/DELETEResponse.h; sourceTree = "<group>"; };
+		239EA1F44C53962C3DEC32E52A030DE0 /* NicooTsDownloader.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = NicooTsDownloader.swift; path = NicooM3u8Downloader/Classes/NicooTsDownloader.swift; sourceTree = "<group>"; };
+		246CD4A206D471887106CFFF3811493B /* Pods-NicooM3u8Downloader_Tests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-NicooM3u8Downloader_Tests-dummy.m"; sourceTree = "<group>"; };
+		24D841D62111D7E08B5BACD83FBBBD2D /* NicooPlayerControlView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = NicooPlayerControlView.swift; path = NicooPlayer/Classes/NicooPlayerControlView.swift; sourceTree = "<group>"; };
+		2950D421EB70F7DA6BF9AD6EF8BB9E93 /* ConstraintLayoutGuide.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ConstraintLayoutGuide.swift; path = Source/ConstraintLayoutGuide.swift; sourceTree = "<group>"; };
+		2B78CF018E496A2BD394A4E660884DA1 /* back_hight@2x.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = "back_hight@2x.png"; path = "NicooPlayer/Assets/back_hight@2x.png"; sourceTree = "<group>"; };
+		2C71562CD19A7BCC2D86B94D308B3061 /* NicooPlayer-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "NicooPlayer-dummy.m"; sourceTree = "<group>"; };
+		2EC3B91732F2EC48822DF993DCB1B14E /* player_close.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = player_close.png; path = NicooPlayer/Assets/player_close.png; sourceTree = "<group>"; };
+		2F083A418D19BB244F6A8E9976C0F990 /* Pods-NicooM3u8Downloader_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-NicooM3u8Downloader_Example.debug.xcconfig"; sourceTree = "<group>"; };
+		2F81ADF53E0DCDCD465D6C33841773EA /* CocoaLumberjack.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = CocoaLumberjack.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		314D8CBD7D280D71D8A39AC5AD46652B /* HTTPAsyncFileResponse.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = HTTPAsyncFileResponse.m; path = Core/Responses/HTTPAsyncFileResponse.m; sourceTree = "<group>"; };
+		3188099DB99F8C5060787D2609A83AE0 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3197FE94E39E1F5AA48EB21AC012819B /* LayoutConstraint.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = LayoutConstraint.swift; path = Source/LayoutConstraint.swift; sourceTree = "<group>"; };
+		31C0823B41E79C2B439804208F9C56AF /* ConstraintRelatableTarget.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ConstraintRelatableTarget.swift; path = Source/ConstraintRelatableTarget.swift; sourceTree = "<group>"; };
+		323034164CC042EAA9292369D011DCB7 /* CocoaHTTPServer.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = CocoaHTTPServer.framework; path = CocoaHTTPServer.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		337528B53AFDB3FD47C7846F692A17DF /* Constraint.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Constraint.swift; path = Source/Constraint.swift; sourceTree = "<group>"; };
+		339A035300D755DB0DCA0B25B54260A3 /* HTTPFileResponse.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = HTTPFileResponse.h; path = Core/Responses/HTTPFileResponse.h; sourceTree = "<group>"; };
+		33C50F4E773D7BACFDBC7E7228269BD0 /* CocoaHTTPServer-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "CocoaHTTPServer-prefix.pch"; sourceTree = "<group>"; };
+		33D26626296FE34CEF12AFEF4EA9DC2D /* CocoaHTTPServer-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "CocoaHTTPServer-umbrella.h"; sourceTree = "<group>"; };
+		35931B81E2062FB1D747F9FCAB5D6CD7 /* sliderflash@3x.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = "sliderflash@3x.png"; path = "NicooPlayer/Assets/sliderflash@3x.png"; sourceTree = "<group>"; };
+		35F58710C0433C8A8B7C9B7D9DC34308 /* Pods-NicooM3u8Downloader_Tests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-NicooM3u8Downloader_Tests-umbrella.h"; sourceTree = "<group>"; };
+		36F4A09D314B5B0B43C89E0A74FF11AA /* DDData.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = DDData.m; path = Core/Categories/DDData.m; sourceTree = "<group>"; };
+		37E896A039B1A367882D0D6E6A6A5322 /* DDAbstractDatabaseLogger.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = DDAbstractDatabaseLogger.m; path = Classes/DDAbstractDatabaseLogger.m; sourceTree = "<group>"; };
+		38931855971821E57D49231B6D5292AB /* sliderflash@2x.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = "sliderflash@2x.png"; path = "NicooPlayer/Assets/sliderflash@2x.png"; sourceTree = "<group>"; };
+		38C6E0C44E029C4DC0038207D8AF338E /* DAVConnection.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = DAVConnection.m; path = Extensions/WebDAV/DAVConnection.m; sourceTree = "<group>"; };
+		3B927E553C60776611ED988C60F2A339 /* Typealiases.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Typealiases.swift; path = Source/Typealiases.swift; sourceTree = "<group>"; };
+		3E9A1000C788FC1337C64CC330E31F7C /* CocoaHTTPServer.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = CocoaHTTPServer.xcconfig; sourceTree = "<group>"; };
+		400F235223EB86EB28239EF9A973AB67 /* NicooM3u8Downloader-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "NicooM3u8Downloader-umbrella.h"; sourceTree = "<group>"; };
+		402F051B35AC1ABA37F8FA41B4D5B9CC /* ConstraintInsetTarget.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ConstraintInsetTarget.swift; path = Source/ConstraintInsetTarget.swift; sourceTree = "<group>"; };
+		41406CD32957521961C5E50BFE4EFEE8 /* ConstraintLayoutGuideDSL.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ConstraintLayoutGuideDSL.swift; path = Source/ConstraintLayoutGuideDSL.swift; sourceTree = "<group>"; };
+		42C7EC36608A9B6ECE8C80AB4F3D0F62 /* MultipartMessageHeader.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MultipartMessageHeader.h; path = Core/Mime/MultipartMessageHeader.h; sourceTree = "<group>"; };
+		431EE4F23E0659162573B09E8D86085B /* back@2x.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = "back@2x.png"; path = "NicooPlayer/Assets/back@2x.png"; sourceTree = "<group>"; };
+		43CFFFBB94C7E7E8B2FA68DD2A4B92C7 /* ConstraintDescription.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ConstraintDescription.swift; path = Source/ConstraintDescription.swift; sourceTree = "<group>"; };
+		44950266EAF4A6080A37DD81CF6EBBDD /* ConstraintMakerRelatable.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ConstraintMakerRelatable.swift; path = Source/ConstraintMakerRelatable.swift; sourceTree = "<group>"; };
+		457E6514336510A642E32290A2F70F77 /* CocoaHTTPServer-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "CocoaHTTPServer-dummy.m"; sourceTree = "<group>"; };
+		471EC095966A039E8C151B9C072AF823 /* NicooYagor.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = NicooYagor.swift; path = NicooM3u8Downloader/Classes/NicooYagor.swift; sourceTree = "<group>"; };
+		484411C625970A88D0A30DF440EBD9BC /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4B33F066BF91D063C9AB2E5CBC6DB5E0 /* DDASLLogCapture.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = DDASLLogCapture.m; path = Classes/DDASLLogCapture.m; sourceTree = "<group>"; };
+		4B62DC718A4CD300CB1C339EA6A9A239 /* NicooPlayer.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = NicooPlayer.xcconfig; sourceTree = "<group>"; };
+		4BE0B0982D72F036A7C937340EF3A488 /* DDLogMacros.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = DDLogMacros.h; path = Classes/DDLogMacros.h; sourceTree = "<group>"; };
+		4C6121782A0FCC55E218DA523A457C80 /* share@2x.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = "share@2x.png"; path = "NicooPlayer/Assets/share@2x.png"; sourceTree = "<group>"; };
+		4C69EE7B0413B6B6A247C5EF40B1DEA9 /* Pods-NicooM3u8Downloader_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-NicooM3u8Downloader_Example.release.xcconfig"; sourceTree = "<group>"; };
+		4DB07085FBD2FA432C7E5F57AB4D3610 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4E8C9DCB59059AE25EFBDAC7F0C89B50 /* ConstraintView+Extensions.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "ConstraintView+Extensions.swift"; path = "Source/ConstraintView+Extensions.swift"; sourceTree = "<group>"; };
+		4ED80633395861599D3A9CC794E1A145 /* WebSocket.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = WebSocket.m; path = Core/WebSocket.m; sourceTree = "<group>"; };
+		50151C7EC5B8A40D12B3668F24B45865 /* share_hight@3x.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = "share_hight@3x.png"; path = "NicooPlayer/Assets/share_hight@3x.png"; sourceTree = "<group>"; };
+		5051C8767763DE510739E9A00BD17939 /* Pods-NicooM3u8Downloader_Example-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-NicooM3u8Downloader_Example-dummy.m"; sourceTree = "<group>"; };
+		5075BA0984F2916B35993A2C25430E5B /* DDMultiFormatter.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = DDMultiFormatter.h; path = Classes/Extensions/DDMultiFormatter.h; sourceTree = "<group>"; };
+		50FECFAC5369B7663A84008425FD01F0 /* GCDAsyncSocket.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = GCDAsyncSocket.h; path = Source/GCD/GCDAsyncSocket.h; sourceTree = "<group>"; };
+		5266612F6E62479E3F6D33694DE7AC48 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; path = README.md; sourceTree = "<group>"; };
+		52C5F21628184C96708F73196039393F /* HTTPResponse.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = HTTPResponse.h; path = Core/HTTPResponse.h; sourceTree = "<group>"; };
+		579E720084E6C3181B42204E4AF33D92 /* ConstraintViewDSL.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ConstraintViewDSL.swift; path = Source/ConstraintViewDSL.swift; sourceTree = "<group>"; };
+		59B29E662C8E86EF419F6A5470DB0B9E /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5D7573BE92F53F807FA270CD9AB46437 /* ConstraintLayoutSupportDSL.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ConstraintLayoutSupportDSL.swift; path = Source/ConstraintLayoutSupportDSL.swift; sourceTree = "<group>"; };
+		5DF1D3FE3355CCD9BD90FA589ECF23BB /* ConstraintMakerExtendable.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ConstraintMakerExtendable.swift; path = Source/ConstraintMakerExtendable.swift; sourceTree = "<group>"; };
+		5E1DC8B43D15A3D72584BB80CDC6479A /* NicooBrightnessView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = NicooBrightnessView.swift; path = NicooPlayer/Classes/NicooBrightnessView.swift; sourceTree = "<group>"; };
+		5E4657B7A0D72D04FC4B85D90B191C76 /* sliderflash.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = sliderflash.png; path = NicooPlayer/Assets/sliderflash.png; sourceTree = "<group>"; };
+		5EC06856E4DA0AF3D01A0BE7B3DC599E /* ConstraintMakerFinalizable.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ConstraintMakerFinalizable.swift; path = Source/ConstraintMakerFinalizable.swift; sourceTree = "<group>"; };
+		62480E175CFBFFDA1D576A6411B20CA9 /* CocoaLumberjack.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = CocoaLumberjack.xcconfig; sourceTree = "<group>"; };
+		6252195131322794B6FF9183191A981B /* Pods-NicooM3u8Downloader_Example-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-NicooM3u8Downloader_Example-acknowledgements.plist"; sourceTree = "<group>"; };
+		62FFF789658AF7A679D1A2C3370E7233 /* NicooM3u8Downloader-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "NicooM3u8Downloader-dummy.m"; sourceTree = "<group>"; };
+		6613530D248E41282122692162D16817 /* NicooPlayer_fullscreen@2x.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = "NicooPlayer_fullscreen@2x.png"; path = "NicooPlayer/Assets/NicooPlayer_fullscreen@2x.png"; sourceTree = "<group>"; };
+		661C1D392E6AB9A46D912FD8AB40E0F7 /* CocoaLumberjack.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = CocoaLumberjack.h; path = Classes/CocoaLumberjack.h; sourceTree = "<group>"; };
+		684AFE0AFE97CD2EB434DF2E7E5E0481 /* HTTPDynamicFileResponse.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = HTTPDynamicFileResponse.m; path = Core/Responses/HTTPDynamicFileResponse.m; sourceTree = "<group>"; };
+		6CF10449D12480E06A27ACF7BD18A9CA /* HTTPRedirectResponse.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = HTTPRedirectResponse.m; path = Core/Responses/HTTPRedirectResponse.m; sourceTree = "<group>"; };
+		6FC2A5E6EBD6115F66FAEF75C0F3FD5A /* HTTPConnection.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = HTTPConnection.h; path = Core/HTTPConnection.h; sourceTree = "<group>"; };
+		7348A4C9821E5A97DC53DB541EC4D786 /* DDDispatchQueueLogFormatter.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = DDDispatchQueueLogFormatter.h; path = Classes/Extensions/DDDispatchQueueLogFormatter.h; sourceTree = "<group>"; };
+		7368AA9AA953E35084A2234F3077B0CA /* HTTPLogging.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = HTTPLogging.h; path = Core/HTTPLogging.h; sourceTree = "<group>"; };
+		73859D7473E6709AC4257E8451EF7A79 /* HTTPDataResponse.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = HTTPDataResponse.m; path = Core/Responses/HTTPDataResponse.m; sourceTree = "<group>"; };
+		769BFA9D625250077D323B224C584214 /* MultipartMessageHeaderField.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = MultipartMessageHeaderField.m; path = Core/Mime/MultipartMessageHeaderField.m; sourceTree = "<group>"; };
+		76E46F7927AADD440487B53FBF75BE19 /* HTTPServer.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = HTTPServer.m; path = Core/HTTPServer.m; sourceTree = "<group>"; };
+		778AA29960C6525896508AD133EE2E57 /* MultipartMessageHeader.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = MultipartMessageHeader.m; path = Core/Mime/MultipartMessageHeader.m; sourceTree = "<group>"; };
+		78862DF9AC0885258B7F6E5AE84D2FD0 /* HTTPAuthenticationRequest.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = HTTPAuthenticationRequest.h; path = Core/HTTPAuthenticationRequest.h; sourceTree = "<group>"; };
+		79823E7A7AB2B9DCB73FAC3C19EE66EF /* GCDAsyncUdpSocket.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = GCDAsyncUdpSocket.h; path = Source/GCD/GCDAsyncUdpSocket.h; sourceTree = "<group>"; };
+		7AC89803C78DC35921EF95298FD51F20 /* DDLog.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = DDLog.h; path = Classes/DDLog.h; sourceTree = "<group>"; };
+		7B33DDA9F7B1BFE51227ACBAEB7ED375 /* ConstraintConstantTarget.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ConstraintConstantTarget.swift; path = Source/ConstraintConstantTarget.swift; sourceTree = "<group>"; };
+		7CE9D2385B0EC2055F5A4D223BE91C01 /* Pods-NicooM3u8Downloader_Example.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-NicooM3u8Downloader_Example.modulemap"; sourceTree = "<group>"; };
+		7D59D9C52A458FDE7001CA2522E86184 /* ConstraintAttributes.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ConstraintAttributes.swift; path = Source/ConstraintAttributes.swift; sourceTree = "<group>"; };
+		7D62C106F592F9425C42F45B13C84B2A /* CocoaAsyncSocket.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = CocoaAsyncSocket.framework; path = CocoaAsyncSocket.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		7D6C30A930E42A8258016E8AD5D06E58 /* CocoaLumberjack-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "CocoaLumberjack-dummy.m"; sourceTree = "<group>"; };
+		7DD5052FED10A4E3EAAA3324F1F97781 /* NicooNetWorkAlert.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = NicooNetWorkAlert.swift; path = NicooPlayer/Classes/NicooNetWorkAlert.swift; sourceTree = "<group>"; };
+		8222CCCD6FDA5A11481F94CA8C809E26 /* player_brightness@2x.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = "player_brightness@2x.png"; path = "NicooPlayer/Assets/player_brightness@2x.png"; sourceTree = "<group>"; };
+		82F79948A0B26708897BF2E66BB279CC /* DDContextFilterLogFormatter.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = DDContextFilterLogFormatter.m; path = Classes/Extensions/DDContextFilterLogFormatter.m; sourceTree = "<group>"; };
+		8360950CA12CA7F78A217779BF753DD8 /* PUTResponse.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = PUTResponse.h; path = Extensions/WebDAV/PUTResponse.h; sourceTree = "<group>"; };
+		8401C9C9D4B1518E5D44DBF23358A18E /* Player_pause@3x.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = "Player_pause@3x.png"; path = "NicooPlayer/Assets/Player_pause@3x.png"; sourceTree = "<group>"; };
+		864702473A60FB84CB33E7F000B54796 /* share_hight@2x.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = "share_hight@2x.png"; path = "NicooPlayer/Assets/share_hight@2x.png"; sourceTree = "<group>"; };
+		86F3366DB89B1D9EA7F2BC4B70D71DD9 /* DDOSLogger.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = DDOSLogger.m; path = Classes/DDOSLogger.m; sourceTree = "<group>"; };
+		870D1F0F68CD00A328A14B558B0E6EA2 /* ConstraintMakerPriortizable.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ConstraintMakerPriortizable.swift; path = Source/ConstraintMakerPriortizable.swift; sourceTree = "<group>"; };
+		875423DCDDF308A4A5A20EF6DEF17336 /* shrinkScreen@2x.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = "shrinkScreen@2x.png"; path = "NicooPlayer/Assets/shrinkScreen@2x.png"; sourceTree = "<group>"; };
+		87908CF93BADE442A383C8021C50ACC6 /* DDData.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = DDData.h; path = Core/Categories/DDData.h; sourceTree = "<group>"; };
+		889DB9E6B7F5B314A78175707FF23880 /* sliderHightLight.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = sliderHightLight.png; path = NicooPlayer/Assets/sliderHightLight.png; sourceTree = "<group>"; };
+		8A283413F6E6A6DEB9BEF9ACADF80F53 /* DDASLLogger.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = DDASLLogger.m; path = Classes/DDASLLogger.m; sourceTree = "<group>"; };
+		8A4A9DCFFEAB76B3E98E079F398E392D /* NicooPlayer-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "NicooPlayer-umbrella.h"; sourceTree = "<group>"; };
+		8AE1ABC2ED529EA8A7A0EA6B7D3BD468 /* CocoaLumberjack-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "CocoaLumberjack-prefix.pch"; sourceTree = "<group>"; };
+		8B82CB90000DB9101668724A9A355861 /* NicooTsListModel.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = NicooTsListModel.swift; path = NicooM3u8Downloader/Classes/NicooTsListModel.swift; sourceTree = "<group>"; };
+		8B965E0C340AD3FC3AC064F0AF959CFE /* DDOSLogger.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = DDOSLogger.h; path = Classes/DDOSLogger.h; sourceTree = "<group>"; };
+		8CF1DFF1867D9D50276C6C8956913100 /* unlock@2x.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = "unlock@2x.png"; path = "NicooPlayer/Assets/unlock@2x.png"; sourceTree = "<group>"; };
+		8DAFA8F2D673163C16809F4C4F49CEDF /* NicooTsModel.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = NicooTsModel.swift; path = NicooM3u8Downloader/Classes/NicooTsModel.swift; sourceTree = "<group>"; };
+		9262910FDAD901B3580D7B91475561A8 /* GCDAsyncUdpSocket.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = GCDAsyncUdpSocket.m; path = Source/GCD/GCDAsyncUdpSocket.m; sourceTree = "<group>"; };
+		9264020A682EDFB3F0DC0061076D980B /* DELETEResponse.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = DELETEResponse.m; path = Extensions/WebDAV/DELETEResponse.m; sourceTree = "<group>"; };
+		9378763329FA14B93A3BEAB81BC528A0 /* forward@2x.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = "forward@2x.png"; path = "NicooPlayer/Assets/forward@2x.png"; sourceTree = "<group>"; };
+		9387252A5D234B935D324B5B311D0BE4 /* CocoaAsyncSocket-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "CocoaAsyncSocket-dummy.m"; sourceTree = "<group>"; };
+		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		96F3AE1F5A162B4F7B3BB4FF2E5DF87A /* backward@3x.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = "backward@3x.png"; path = "NicooPlayer/Assets/backward@3x.png"; sourceTree = "<group>"; };
+		99520F5861C9C97CCE5407356059ED4F /* HTTPAsyncFileResponse.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = HTTPAsyncFileResponse.h; path = Core/Responses/HTTPAsyncFileResponse.h; sourceTree = "<group>"; };
+		9A5C46F7A09E258FA3D9AC3F5E70E25A /* DDContextFilterLogFormatter.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = DDContextFilterLogFormatter.h; path = Classes/Extensions/DDContextFilterLogFormatter.h; sourceTree = "<group>"; };
+		9B804025A6284D4989907B18BDA8E5DA /* WebSocket.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = WebSocket.h; path = Core/WebSocket.h; sourceTree = "<group>"; };
+		9D28DC561DEDA71A40F584557A258A5C /* DDASLLogCapture.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = DDASLLogCapture.h; path = Classes/DDASLLogCapture.h; sourceTree = "<group>"; };
+		9DA44B0E29AF01D2043B32BFDB232DBD /* SnapKit-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "SnapKit-dummy.m"; sourceTree = "<group>"; };
+		9DB3488E545274295B0985169F8FD2AE /* replay_hight@3x.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = "replay_hight@3x.png"; path = "NicooPlayer/Assets/replay_hight@3x.png"; sourceTree = "<group>"; };
+		9F8CFB37719316F9735D7D0A402F21F8 /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.0.sdk/System/Library/Frameworks/Security.framework; sourceTree = DEVELOPER_DIR; };
+		A0EE46FF5153EB8883F0DB9F4AD30E4A /* ResourceBundle-NicooPlayer-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "ResourceBundle-NicooPlayer-Info.plist"; sourceTree = "<group>"; };
+		A3D7C9858A5A369E637CD10D56825896 /* NicooM3u8Downloader.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = NicooM3u8Downloader.modulemap; sourceTree = "<group>"; };
+		A61C92E6374932140A233B0C5DC63320 /* SnapKit.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = SnapKit.xcconfig; sourceTree = "<group>"; };
+		A78FAA894C2D43017FDCA81FE76B57D8 /* Pods-NicooM3u8Downloader_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-NicooM3u8Downloader_Tests.debug.xcconfig"; sourceTree = "<group>"; };
+		A7C21C953FAF7B96788B04ACDC7C4D77 /* SnapKit.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = SnapKit.modulemap; sourceTree = "<group>"; };
+		A7C93029ABC85C25E66B0AD5F0F76ABE /* Pods-NicooM3u8Downloader_Example-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-NicooM3u8Downloader_Example-frameworks.sh"; sourceTree = "<group>"; };
+		AA9CF20734E16E8076D44255B9284A4E /* MultipartFormDataParser.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = MultipartFormDataParser.m; path = Core/Mime/MultipartFormDataParser.m; sourceTree = "<group>"; };
+		AC42FB248006097B15005DDD049DF1E6 /* DDASLLogger.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = DDASLLogger.h; path = Classes/DDASLLogger.h; sourceTree = "<group>"; };
+		AE7DCC37FA5655CB2E6513BB263A54F0 /* DDRange.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = DDRange.h; path = Core/Categories/DDRange.h; sourceTree = "<group>"; };
+		AEB820C7F6FFFD945F9F6ACE1B0B67F5 /* CocoaAsyncSocket-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "CocoaAsyncSocket-prefix.pch"; sourceTree = "<group>"; };
+		AFAC1EA0B00A8A6C91F4CA6117E1E23F /* ConstraintPriority.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ConstraintPriority.swift; path = Source/ConstraintPriority.swift; sourceTree = "<group>"; };
+		B0639D0E2AAC557F605E478FC831277C /* HTTPMessage.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = HTTPMessage.m; path = Core/HTTPMessage.m; sourceTree = "<group>"; };
+		B099AE5E67E53698FB595442C1EEF279 /* HTTPAuthenticationRequest.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = HTTPAuthenticationRequest.m; path = Core/HTTPAuthenticationRequest.m; sourceTree = "<group>"; };
+		B0CE0B413BD9A8711A115C24CF839DA9 /* HTTPConnection.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = HTTPConnection.m; path = Core/HTTPConnection.m; sourceTree = "<group>"; };
+		B2753D4581428760BED38FBE2D036478 /* DDLegacyMacros.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = DDLegacyMacros.h; path = Classes/DDLegacyMacros.h; sourceTree = "<group>"; };
+		B2AF35031DEF13E7FC633D7A80301331 /* DDNumber.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = DDNumber.m; path = Core/Categories/DDNumber.m; sourceTree = "<group>"; };
+		B378FE64B181FC08812BE4DDE5D85A31 /* LayoutConstraintItem.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = LayoutConstraintItem.swift; path = Source/LayoutConstraintItem.swift; sourceTree = "<group>"; };
+		B3F4A5C4EF50AD5D3594760481162845 /* CocoaAsyncSocket.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = CocoaAsyncSocket.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		B40F1B311B1EF63754608758FF618B17 /* ConstraintMultiplierTarget.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ConstraintMultiplierTarget.swift; path = Source/ConstraintMultiplierTarget.swift; sourceTree = "<group>"; };
+		B5F4B984BF810D4F607B8C25F9C870FE /* ConstraintView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ConstraintView.swift; path = Source/ConstraintView.swift; sourceTree = "<group>"; };
+		B7062CA25DC7CC1F03C3BE9E10052CF2 /* ConstraintLayoutSupport.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ConstraintLayoutSupport.swift; path = Source/ConstraintLayoutSupport.swift; sourceTree = "<group>"; };
+		B86A1AF1AC6396FEFF01AC495960D982 /* play@2x.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = "play@2x.png"; path = "NicooPlayer/Assets/play@2x.png"; sourceTree = "<group>"; };
+		B9268349F0C8B26C307CF054A6F6A5F8 /* Pods-NicooM3u8Downloader_Example-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-NicooM3u8Downloader_Example-acknowledgements.markdown"; sourceTree = "<group>"; };
+		BB0CA39954B3A68B7B3F69010A051EFF /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; path = LICENSE; sourceTree = "<group>"; };
+		BB1B76CA340CFA481F2B035BA8C7B69D /* CocoaLumberjack.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = CocoaLumberjack.framework; path = CocoaLumberjack.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		BB8491AA2610AFB2CA37C6790A7DF0A6 /* DDDispatchQueueLogFormatter.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = DDDispatchQueueLogFormatter.m; path = Classes/Extensions/DDDispatchQueueLogFormatter.m; sourceTree = "<group>"; };
+		BDA36DD307AF85660F88720877F71644 /* Pods-NicooM3u8Downloader_Tests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-NicooM3u8Downloader_Tests-acknowledgements.plist"; sourceTree = "<group>"; };
+		BF4359069F582CD47B0590E960E702B6 /* NicooM3u8Downloader.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; lastKnownFileType = text; path = NicooM3u8Downloader.podspec; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		BF67279F56B8F25583B572D7C3CD209F /* ConstraintLayoutGuide+Extensions.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "ConstraintLayoutGuide+Extensions.swift"; path = "Source/ConstraintLayoutGuide+Extensions.swift"; sourceTree = "<group>"; };
+		BFC87D2F1398E1C09CA741CC5CC2E307 /* Pods_NicooM3u8Downloader_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_NicooM3u8Downloader_Example.framework; path = "Pods-NicooM3u8Downloader_Example.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		C0C3CB06EE7715813B90A4803BCDC8B2 /* ConstraintOffsetTarget.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ConstraintOffsetTarget.swift; path = Source/ConstraintOffsetTarget.swift; sourceTree = "<group>"; };
+		C62A8AF7BECDF4FE84D41AC40E2AF1E6 /* Debugging.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Debugging.swift; path = Source/Debugging.swift; sourceTree = "<group>"; };
+		C6441B2FE72AB85311030D7340918B5E /* SnapKit-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SnapKit-prefix.pch"; sourceTree = "<group>"; };
+		C78A34ADB01F17BBC599705A811318B6 /* HTTPRedirectResponse.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = HTTPRedirectResponse.h; path = Core/Responses/HTTPRedirectResponse.h; sourceTree = "<group>"; };
+		C83CBCE1F8E51EE1DC6FD80956F4AAB0 /* CocoaLumberjack-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "CocoaLumberjack-umbrella.h"; sourceTree = "<group>"; };
+		C8921CC01194E280A28435786D8F314E /* DDMultiFormatter.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = DDMultiFormatter.m; path = Classes/Extensions/DDMultiFormatter.m; sourceTree = "<group>"; };
+		C896614E5C6EC8E710D7F5B55BF1E124 /* DDTTYLogger.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = DDTTYLogger.m; path = Classes/DDTTYLogger.m; sourceTree = "<group>"; };
+		C92904F8B630D4D60C9780F6EE62F4E2 /* NicooPlayer_fullscreen.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = NicooPlayer_fullscreen.png; path = NicooPlayer/Assets/NicooPlayer_fullscreen.png; sourceTree = "<group>"; };
+		C96B80460E260288FF1C9FBD9F0710F6 /* forward@3x.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = "forward@3x.png"; path = "NicooPlayer/Assets/forward@3x.png"; sourceTree = "<group>"; };
+		C9F310A5AFC99E27130AD6591D04EA90 /* player_close@3x.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = "player_close@3x.png"; path = "NicooPlayer/Assets/player_close@3x.png"; sourceTree = "<group>"; };
+		CA3C6566FB8329B558766768368AF91F /* player_close@2x.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = "player_close@2x.png"; path = "NicooPlayer/Assets/player_close@2x.png"; sourceTree = "<group>"; };
+		CB28FB9C4EFD76F71E63E35670EAF401 /* SnapKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = SnapKit.framework; path = SnapKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		CBA454554D5CBED7E5FC0D30A6E49AF5 /* SnapKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = SnapKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		CC3600089E292AF49DCC2854D3903F67 /* DAVResponse.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = DAVResponse.h; path = Extensions/WebDAV/DAVResponse.h; sourceTree = "<group>"; };
+		CD5D22B4D46CFB84155CBD282C5CA6A1 /* DAVConnection.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = DAVConnection.h; path = Extensions/WebDAV/DAVConnection.h; sourceTree = "<group>"; };
+		CE746045FCACAA39DC9D9BBEF0941D08 /* CocoaAsyncSocket.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = CocoaAsyncSocket.xcconfig; sourceTree = "<group>"; };
+		CF77B6102E6F8D694859C2D5C636595D /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CF85956D0B75C965CE0F3116F12F7B63 /* NicooM3u8Parser.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = NicooM3u8Parser.swift; path = NicooM3u8Downloader/Classes/NicooM3u8Parser.swift; sourceTree = "<group>"; };
+		D3576939B9727607E975322111CB2DDF /* play@3x.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = "play@3x.png"; path = "NicooPlayer/Assets/play@3x.png"; sourceTree = "<group>"; };
+		D57187A51EAA8712DF07D728D48DAE41 /* NicooDownloadHelper.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = NicooDownloadHelper.swift; path = NicooM3u8Downloader/Classes/NicooDownloadHelper.swift; sourceTree = "<group>"; };
+		D77204045A00B980A0F8BF8BFC60CF46 /* NicooPlayer.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = NicooPlayer.modulemap; sourceTree = "<group>"; };
+		D7B89134764F6D5B74B00435438F9BB6 /* NicooAssetResourceLoader.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = NicooAssetResourceLoader.swift; path = NicooPlayer/Classes/NicooAssetResourceLoader.swift; sourceTree = "<group>"; };
+		D7F93B8BE1B01FFF7B90E5A7F18877B0 /* CocoaAsyncSocket.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = CocoaAsyncSocket.modulemap; sourceTree = "<group>"; };
+		D8F6C12B2E70B93DD152EE89CEFC6526 /* DDNumber.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = DDNumber.h; path = Core/Categories/DDNumber.h; sourceTree = "<group>"; };
+		D9E115A23697DD49086C5664AE747F25 /* NicooM3u8Downloader.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = NicooM3u8Downloader.xcconfig; sourceTree = "<group>"; };
+		DD87B0B35822FAAC7624F082E6E3E553 /* DDAbstractDatabaseLogger.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = DDAbstractDatabaseLogger.h; path = Classes/DDAbstractDatabaseLogger.h; sourceTree = "<group>"; };
+		DDC76B498CCDD2F84310BAE947CFBCD1 /* NicooPlayer.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = NicooPlayer.framework; path = NicooPlayer.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		DDE89E46D4BD1CDFBF3623BC70094441 /* NicooPlayerOrietation.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = NicooPlayerOrietation.swift; path = NicooPlayer/Classes/NicooPlayerOrietation.swift; sourceTree = "<group>"; };
+		DE8A8FCADF0AFEBCDDE5E5EDF3C46331 /* HTTPFileResponse.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = HTTPFileResponse.m; path = Core/Responses/HTTPFileResponse.m; sourceTree = "<group>"; };
+		DF6424845FD6CAE78013456EB90FC5EB /* NicooPlayer_slider.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = NicooPlayer_slider.png; path = NicooPlayer/Assets/NicooPlayer_slider.png; sourceTree = "<group>"; };
+		E12ABEF0C3039CB0D4FAC2156185F816 /* Pods-NicooM3u8Downloader_Tests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-NicooM3u8Downloader_Tests-frameworks.sh"; sourceTree = "<group>"; };
+		E366A76108ECB74142692A35547C7018 /* PUTResponse.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = PUTResponse.m; path = Extensions/WebDAV/PUTResponse.m; sourceTree = "<group>"; };
+		E450F7E5910DDB368150A5D4CFEF6B87 /* DDLog.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = DDLog.m; path = Classes/DDLog.m; sourceTree = "<group>"; };
+		E4686011A3D0154953CA1C9EBABFC738 /* DDTTYLogger.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = DDTTYLogger.h; path = Classes/DDTTYLogger.h; sourceTree = "<group>"; };
+		E594F285E3C38B441DC1BC0E3D735567 /* MultipartFormDataParser.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MultipartFormDataParser.h; path = Core/Mime/MultipartFormDataParser.h; sourceTree = "<group>"; };
+		E730E399C32CCF22EBB2F2E494D4EDBB /* Pods-NicooM3u8Downloader_Example-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-NicooM3u8Downloader_Example-resources.sh"; sourceTree = "<group>"; };
+		E7A7F938A367B16FABE83DC67002B4D3 /* NicooPlayer_slider@3x.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = "NicooPlayer_slider@3x.png"; path = "NicooPlayer/Assets/NicooPlayer_slider@3x.png"; sourceTree = "<group>"; };
+		E8AB897E4286F5F6F614D5C6DF8FB21D /* CFNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.0.sdk/System/Library/Frameworks/CFNetwork.framework; sourceTree = DEVELOPER_DIR; };
+		E8D384A9A99A6EAF452894A740268E26 /* pause@3x.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = "pause@3x.png"; path = "NicooPlayer/Assets/pause@3x.png"; sourceTree = "<group>"; };
+		E8F12C3FB41AF075653B119D6EB44577 /* ConstraintMaker.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ConstraintMaker.swift; path = Source/ConstraintMaker.swift; sourceTree = "<group>"; };
+		EE17D5A67C643BA61A8966B43D46AC12 /* NicooLoadedFailedView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = NicooLoadedFailedView.swift; path = NicooPlayer/Classes/NicooLoadedFailedView.swift; sourceTree = "<group>"; };
+		EF221E7113D31EBFB49A193528903068 /* NicooImgManager.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = NicooImgManager.swift; path = NicooPlayer/Classes/NicooImgManager.swift; sourceTree = "<group>"; };
+		EF5B4F56C0A8F7C15ABEA345513B785D /* DDFileLogger.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = DDFileLogger.m; path = Classes/DDFileLogger.m; sourceTree = "<group>"; };
+		EF9A0E99582261E145266CB04F8284DC /* Pods-NicooM3u8Downloader_Example-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-NicooM3u8Downloader_Example-umbrella.h"; sourceTree = "<group>"; };
+		EFEE94603A55802957FA53578DEAF87B /* share@3x.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = "share@3x.png"; path = "NicooPlayer/Assets/share@3x.png"; sourceTree = "<group>"; };
+		F280D0A9540407D0FE3C9043C57BAFAC /* NicooPlayer-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "NicooPlayer-prefix.pch"; sourceTree = "<group>"; };
+		F3450A42886D6F482D3179C8BA983F7A /* MultipartMessageHeaderField.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MultipartMessageHeaderField.h; path = Core/Mime/MultipartMessageHeaderField.h; sourceTree = "<group>"; };
+		F4DC6B731DF9B189485FFCE856168BAC /* NicooVideoRequestTask.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = NicooVideoRequestTask.swift; path = NicooPlayer/Classes/NicooVideoRequestTask.swift; sourceTree = "<group>"; };
+		F59817CEC5F2F63311296B62A7781B06 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F68A5C07A0FE3E432B21188DD1FDFF00 /* NicooM3u8Downloader.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = NicooM3u8Downloader.framework; path = NicooM3u8Downloader.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		F733D212BA03EFEF1DA8ECDD5C47AAD1 /* unlock@3x.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = "unlock@3x.png"; path = "NicooPlayer/Assets/unlock@3x.png"; sourceTree = "<group>"; };
+		F788C564C9D38D891A031DC6DE40D40A /* CocoaAsyncSocket-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "CocoaAsyncSocket-umbrella.h"; sourceTree = "<group>"; };
+		F81B2958B7BD13DFA69869D513112141 /* CocoaHTTPServer.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = CocoaHTTPServer.modulemap; sourceTree = "<group>"; };
+		F837C6EC7344286B58CF54D0EEB58419 /* SnapKit-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SnapKit-umbrella.h"; sourceTree = "<group>"; };
+		F9180C70FB6FBC4C7507DF0B6A018F70 /* Pods-NicooM3u8Downloader_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-NicooM3u8Downloader_Tests.release.xcconfig"; sourceTree = "<group>"; };
+		FC4F0F82A53673BCB21D29D7A6C2AE1A /* Pods_NicooM3u8Downloader_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_NicooM3u8Downloader_Tests.framework; path = "Pods-NicooM3u8Downloader_Tests.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		FDD18498A3AD7C9D004C66C414030E53 /* UILayoutSupport+Extensions.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "UILayoutSupport+Extensions.swift"; path = "Source/UILayoutSupport+Extensions.swift"; sourceTree = "<group>"; };
+		FE18C65BDE1B164DD9E0FB441B6FF21D /* lockscreen@2x.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = "lockscreen@2x.png"; path = "NicooPlayer/Assets/lockscreen@2x.png"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		16DF8779A54292E6998B3544A52438BA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FCA070320CCC4BFE2CE8742523D9577D /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5BA1C989828C6C11BAC3579CF79EC5A7 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C1E4BFA564DA2F893EA19389D6B3B6D7 /* Foundation.framework in Frameworks */,
+				3C4E790D8EE3A57E9CAEABAC348CDAF4 /* SnapKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6E58E8F0556AADF0FE907EAEE3129970 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				87AC67D4C896AB5B2C43A267781D3BF3 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		73EDCCE02D9536A6E6AD00154B166BFD /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				736463C7BAEC936E2EFB4435AEB93DFA /* CFNetwork.framework in Frameworks */,
+				02CB9EDB7F6D7B1B6FA0119E732F5ADF /* Foundation.framework in Frameworks */,
+				09DCAE72CADB3D5CDAEE45447554D05C /* Security.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8621055DF0DD7CA7AB841F23DE799C86 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A15EF2BCCD786DABDBBD8BCA78CF5FCC /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D2A3F5BA1FEABFBE1C9748398B5F9CD7 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5AB985E8F37D314601A6DBF21113A4C3 /* CFNetwork.framework in Frameworks */,
+				D4CFAD86B7C003528BC2B92F4B8EADEA /* CocoaAsyncSocket.framework in Frameworks */,
+				AB655E0053E80F9583F0DBE136F8DDDD /* CocoaLumberjack.framework in Frameworks */,
+				A4355AB3E25E2312652DF94D86470AC8 /* Foundation.framework in Frameworks */,
+				7BC62F6BD38FCEF56D3E6341FF133C2F /* Security.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DD6D9FD3390612885F3D44C0550B8000 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E264125D82DCD4492CC6C1C488A2ED5F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B8822708669491CFE2D3CF36D200B6FD /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FC4596891589D68D09801D470E55F171 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AB780511D7B4C5071A467FEA6CAB7C75 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		033AF731B57F5A41A45052D7BF3A2854 /* SnapKit */ = {
+			isa = PBXGroup;
+			children = (
+				337528B53AFDB3FD47C7846F692A17DF /* Constraint.swift */,
+				7D59D9C52A458FDE7001CA2522E86184 /* ConstraintAttributes.swift */,
+				13503C2E195A4569FDFFDA001B663F68 /* ConstraintConfig.swift */,
+				7B33DDA9F7B1BFE51227ACBAEB7ED375 /* ConstraintConstantTarget.swift */,
+				43CFFFBB94C7E7E8B2FA68DD2A4B92C7 /* ConstraintDescription.swift */,
+				01A09C598287403564231149B63B7020 /* ConstraintDSL.swift */,
+				197343C9CD6CC5E6E44E529B50636313 /* ConstraintInsets.swift */,
+				402F051B35AC1ABA37F8FA41B4D5B9CC /* ConstraintInsetTarget.swift */,
+				0A3D66E53C24ABD3DE913DAD2D00BC69 /* ConstraintItem.swift */,
+				2950D421EB70F7DA6BF9AD6EF8BB9E93 /* ConstraintLayoutGuide.swift */,
+				BF67279F56B8F25583B572D7C3CD209F /* ConstraintLayoutGuide+Extensions.swift */,
+				41406CD32957521961C5E50BFE4EFEE8 /* ConstraintLayoutGuideDSL.swift */,
+				B7062CA25DC7CC1F03C3BE9E10052CF2 /* ConstraintLayoutSupport.swift */,
+				5D7573BE92F53F807FA270CD9AB46437 /* ConstraintLayoutSupportDSL.swift */,
+				E8F12C3FB41AF075653B119D6EB44577 /* ConstraintMaker.swift */,
+				1ECEA310EABC5AB1BD45E8ED64331A3D /* ConstraintMakerEditable.swift */,
+				5DF1D3FE3355CCD9BD90FA589ECF23BB /* ConstraintMakerExtendable.swift */,
+				5EC06856E4DA0AF3D01A0BE7B3DC599E /* ConstraintMakerFinalizable.swift */,
+				870D1F0F68CD00A328A14B558B0E6EA2 /* ConstraintMakerPriortizable.swift */,
+				44950266EAF4A6080A37DD81CF6EBBDD /* ConstraintMakerRelatable.swift */,
+				B40F1B311B1EF63754608758FF618B17 /* ConstraintMultiplierTarget.swift */,
+				C0C3CB06EE7715813B90A4803BCDC8B2 /* ConstraintOffsetTarget.swift */,
+				AFAC1EA0B00A8A6C91F4CA6117E1E23F /* ConstraintPriority.swift */,
+				124BF8433372CB0B96F98D2E8CD24CF0 /* ConstraintPriorityTarget.swift */,
+				31C0823B41E79C2B439804208F9C56AF /* ConstraintRelatableTarget.swift */,
+				09D6246763C0AA98FD836CE5C4549680 /* ConstraintRelation.swift */,
+				B5F4B984BF810D4F607B8C25F9C870FE /* ConstraintView.swift */,
+				4E8C9DCB59059AE25EFBDAC7F0C89B50 /* ConstraintView+Extensions.swift */,
+				579E720084E6C3181B42204E4AF33D92 /* ConstraintViewDSL.swift */,
+				C62A8AF7BECDF4FE84D41AC40E2AF1E6 /* Debugging.swift */,
+				3197FE94E39E1F5AA48EB21AC012819B /* LayoutConstraint.swift */,
+				B378FE64B181FC08812BE4DDE5D85A31 /* LayoutConstraintItem.swift */,
+				3B927E553C60776611ED988C60F2A339 /* Typealiases.swift */,
+				FDD18498A3AD7C9D004C66C414030E53 /* UILayoutSupport+Extensions.swift */,
+				10E5599254C8B3851D218075B1E00CE5 /* Support Files */,
+			);
+			name = SnapKit;
+			path = SnapKit;
+			sourceTree = "<group>";
+		};
+		0A1B79F640ACBCDFAFAB428148DF1A23 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				AC24E6E6CE08326C58E0DCFD369686A5 /* CocoaAsyncSocket */,
+				8FED81E406AB86F5BC8CECC7509555C8 /* CocoaHTTPServer */,
+				2BDCA5577C90F00EAD1296A33922909A /* CocoaLumberjack */,
+				851CA156E4941202460426600B826577 /* NicooPlayer */,
+				033AF731B57F5A41A45052D7BF3A2854 /* SnapKit */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		0C1449B759633524C69EE2EB0943FB8D /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				7D62C106F592F9425C42F45B13C84B2A /* CocoaAsyncSocket.framework */,
+				323034164CC042EAA9292369D011DCB7 /* CocoaHTTPServer.framework */,
+				BB1B76CA340CFA481F2B035BA8C7B69D /* CocoaLumberjack.framework */,
+				F68A5C07A0FE3E432B21188DD1FDFF00 /* NicooM3u8Downloader.framework */,
+				215CD396F662A9961CD4D28E3D8D1E72 /* NicooPlayer.bundle */,
+				DDC76B498CCDD2F84310BAE947CFBCD1 /* NicooPlayer.framework */,
+				BFC87D2F1398E1C09CA741CC5CC2E307 /* Pods_NicooM3u8Downloader_Example.framework */,
+				FC4F0F82A53673BCB21D29D7A6C2AE1A /* Pods_NicooM3u8Downloader_Tests.framework */,
+				CB28FB9C4EFD76F71E63E35670EAF401 /* SnapKit.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		10E5599254C8B3851D218075B1E00CE5 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				1741514E7FF5B550B12231007922A14F /* Info.plist */,
+				A7C21C953FAF7B96788B04ACDC7C4D77 /* SnapKit.modulemap */,
+				A61C92E6374932140A233B0C5DC63320 /* SnapKit.xcconfig */,
+				9DA44B0E29AF01D2043B32BFDB232DBD /* SnapKit-dummy.m */,
+				C6441B2FE72AB85311030D7340918B5E /* SnapKit-prefix.pch */,
+				F837C6EC7344286B58CF54D0EEB58419 /* SnapKit-umbrella.h */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/SnapKit";
+			sourceTree = "<group>";
+		};
+		142186A97913EFB5F6340230CA15A877 /* Pod */ = {
+			isa = PBXGroup;
+			children = (
+				BB0CA39954B3A68B7B3F69010A051EFF /* LICENSE */,
+				BF4359069F582CD47B0590E960E702B6 /* NicooM3u8Downloader.podspec */,
+				5266612F6E62479E3F6D33694DE7AC48 /* README.md */,
+			);
+			name = Pod;
+			sourceTree = "<group>";
+		};
+		2BDCA5577C90F00EAD1296A33922909A /* CocoaLumberjack */ = {
+			isa = PBXGroup;
+			children = (
+				B73F12BF41C88979F4AD66C148F9E5DC /* Default */,
+				B551DDF7A8A30592EB353BF38863DE72 /* Extensions */,
+				AFA95F4B8D8BF2E3513FCEAC865682CA /* Support Files */,
+			);
+			name = CocoaLumberjack;
+			path = CocoaLumberjack;
+			sourceTree = "<group>";
+		};
+		2CE77AAB084F5FF36BB456EE44F2D4E2 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				3188099DB99F8C5060787D2609A83AE0 /* Info.plist */,
+				D77204045A00B980A0F8BF8BFC60CF46 /* NicooPlayer.modulemap */,
+				4B62DC718A4CD300CB1C339EA6A9A239 /* NicooPlayer.xcconfig */,
+				2C71562CD19A7BCC2D86B94D308B3061 /* NicooPlayer-dummy.m */,
+				F280D0A9540407D0FE3C9043C57BAFAC /* NicooPlayer-prefix.pch */,
+				8A4A9DCFFEAB76B3E98E079F398E392D /* NicooPlayer-umbrella.h */,
+				A0EE46FF5153EB8883F0DB9F4AD30E4A /* ResourceBundle-NicooPlayer-Info.plist */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/NicooPlayer";
+			sourceTree = "<group>";
+		};
+		49751EC3D67B2633AD05FE0E90298308 /* Targets Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				BEFB9B78E52C8F6B39A7302AE9E72469 /* Pods-NicooM3u8Downloader_Example */,
+				6BAD3F12977846B9DABB21FD49D80B36 /* Pods-NicooM3u8Downloader_Tests */,
+			);
+			name = "Targets Support Files";
+			sourceTree = "<group>";
+		};
+		501C9E87E310BE41D9962822415F4827 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				431EE4F23E0659162573B09E8D86085B /* back@2x.png */,
+				1962DD7A6A0588A069F83B21F0D10B4D /* back@3x.png */,
+				2B78CF018E496A2BD394A4E660884DA1 /* back_hight@2x.png */,
+				1E66E4466FD0E30BC3704EC94963BB42 /* back_hight@3x.png */,
+				073A2E7565B7CF4A5B10C4ADFFD14046 /* backward@2x.png */,
+				96F3AE1F5A162B4F7B3BB4FF2E5DF87A /* backward@3x.png */,
+				9378763329FA14B93A3BEAB81BC528A0 /* forward@2x.png */,
+				C96B80460E260288FF1C9FBD9F0710F6 /* forward@3x.png */,
+				FE18C65BDE1B164DD9E0FB441B6FF21D /* lockscreen@2x.png */,
+				19BAAF3FD5DDBF99A2D9C8555C9E5FAE /* lockscreen@3x.png */,
+				C92904F8B630D4D60C9780F6EE62F4E2 /* NicooPlayer_fullscreen.png */,
+				6613530D248E41282122692162D16817 /* NicooPlayer_fullscreen@2x.png */,
+				221D1B9863FF05AFD1AF89576C5C7AE6 /* NicooPlayer_fullscreen@3x.png */,
+				DF6424845FD6CAE78013456EB90FC5EB /* NicooPlayer_slider.png */,
+				18CE6228AF9E7289CC0145D0209652E0 /* NicooPlayer_slider@2x.png */,
+				E7A7F938A367B16FABE83DC67002B4D3 /* NicooPlayer_slider@3x.png */,
+				0E0C6533DB2203FC1F3D799490A90824 /* pause@2x.png */,
+				E8D384A9A99A6EAF452894A740268E26 /* pause@3x.png */,
+				B86A1AF1AC6396FEFF01AC495960D982 /* play@2x.png */,
+				D3576939B9727607E975322111CB2DDF /* play@3x.png */,
+				8222CCCD6FDA5A11481F94CA8C809E26 /* player_brightness@2x.png */,
+				2EC3B91732F2EC48822DF993DCB1B14E /* player_close.png */,
+				CA3C6566FB8329B558766768368AF91F /* player_close@2x.png */,
+				C9F310A5AFC99E27130AD6591D04EA90 /* player_close@3x.png */,
+				1EC5B2F68FDDFB73306D87227DAC8F69 /* Player_pause@2x.png */,
+				8401C9C9D4B1518E5D44DBF23358A18E /* Player_pause@3x.png */,
+				0B83FCA0AA6DDC2236E8210A96F93E74 /* replay@2x.png */,
+				08DDED145EAB42DABB0B8799BB5459D8 /* replay@3x.png */,
+				1C0E5CFCD74AC3D75F7F76A99DD57862 /* replay_hight@2x.png */,
+				9DB3488E545274295B0985169F8FD2AE /* replay_hight@3x.png */,
+				4C6121782A0FCC55E218DA523A457C80 /* share@2x.png */,
+				EFEE94603A55802957FA53578DEAF87B /* share@3x.png */,
+				864702473A60FB84CB33E7F000B54796 /* share_hight@2x.png */,
+				50151C7EC5B8A40D12B3668F24B45865 /* share_hight@3x.png */,
+				875423DCDDF308A4A5A20EF6DEF17336 /* shrinkScreen@2x.png */,
+				118BCF95F2EF7532438DEDBA076E66CA /* shrinkScreen@3x.png */,
+				5E4657B7A0D72D04FC4B85D90B191C76 /* sliderflash.png */,
+				38931855971821E57D49231B6D5292AB /* sliderflash@2x.png */,
+				35931B81E2062FB1D747F9FCAB5D6CD7 /* sliderflash@3x.png */,
+				889DB9E6B7F5B314A78175707FF23880 /* sliderHightLight.png */,
+				8CF1DFF1867D9D50276C6C8956913100 /* unlock@2x.png */,
+				F733D212BA03EFEF1DA8ECDD5C47AAD1 /* unlock@3x.png */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		62C9535F376C7A283FBE8C760C32C44E /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				E8AB897E4286F5F6F614D5C6DF8FB21D /* CFNetwork.framework */,
+				0B2E624D5ABA199462F708C88B011A1A /* Foundation.framework */,
+				9F8CFB37719316F9735D7D0A402F21F8 /* Security.framework */,
+			);
+			name = iOS;
+			sourceTree = "<group>";
+		};
+		6BAD3F12977846B9DABB21FD49D80B36 /* Pods-NicooM3u8Downloader_Tests */ = {
+			isa = PBXGroup;
+			children = (
+				052D995362DFDFE91AFB8F71CAC3FDF8 /* Info.plist */,
+				09229E762682E2CF37FB2787C2793E9B /* Pods-NicooM3u8Downloader_Tests.modulemap */,
+				07BBB0E45615ECB7B97372BF8C569D0A /* Pods-NicooM3u8Downloader_Tests-acknowledgements.markdown */,
+				BDA36DD307AF85660F88720877F71644 /* Pods-NicooM3u8Downloader_Tests-acknowledgements.plist */,
+				246CD4A206D471887106CFFF3811493B /* Pods-NicooM3u8Downloader_Tests-dummy.m */,
+				E12ABEF0C3039CB0D4FAC2156185F816 /* Pods-NicooM3u8Downloader_Tests-frameworks.sh */,
+				1B102D9536B63F397D7FDFC0F99CE7CF /* Pods-NicooM3u8Downloader_Tests-resources.sh */,
+				35F58710C0433C8A8B7C9B7D9DC34308 /* Pods-NicooM3u8Downloader_Tests-umbrella.h */,
+				A78FAA894C2D43017FDCA81FE76B57D8 /* Pods-NicooM3u8Downloader_Tests.debug.xcconfig */,
+				F9180C70FB6FBC4C7507DF0B6A018F70 /* Pods-NicooM3u8Downloader_Tests.release.xcconfig */,
+			);
+			name = "Pods-NicooM3u8Downloader_Tests";
+			path = "Target Support Files/Pods-NicooM3u8Downloader_Tests";
+			sourceTree = "<group>";
+		};
+		71600AB1659C20013217AAD25247C03E /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				CF77B6102E6F8D694859C2D5C636595D /* Info.plist */,
+				A3D7C9858A5A369E637CD10D56825896 /* NicooM3u8Downloader.modulemap */,
+				D9E115A23697DD49086C5664AE747F25 /* NicooM3u8Downloader.xcconfig */,
+				62FFF789658AF7A679D1A2C3370E7233 /* NicooM3u8Downloader-dummy.m */,
+				10EAB9502934DFF65F551E52CB088FD8 /* NicooM3u8Downloader-prefix.pch */,
+				400F235223EB86EB28239EF9A973AB67 /* NicooM3u8Downloader-umbrella.h */,
+			);
+			name = "Support Files";
+			path = "Example/Pods/Target Support Files/NicooM3u8Downloader";
+			sourceTree = "<group>";
+		};
+		7DB346D0F39D3F0E887471402A8071AB = {
+			isa = PBXGroup;
+			children = (
+				93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */,
+				AF66D1EC0E82D6DA4FBC7DEC222426DF /* Development Pods */,
+				C73065C934489A74614F7F90DA468454 /* Frameworks */,
+				0A1B79F640ACBCDFAFAB428148DF1A23 /* Pods */,
+				0C1449B759633524C69EE2EB0943FB8D /* Products */,
+				49751EC3D67B2633AD05FE0E90298308 /* Targets Support Files */,
+			);
+			sourceTree = "<group>";
+		};
+		851CA156E4941202460426600B826577 /* NicooPlayer */ = {
+			isa = PBXGroup;
+			children = (
+				D7B89134764F6D5B74B00435438F9BB6 /* NicooAssetResourceLoader.swift */,
+				5E1DC8B43D15A3D72584BB80CDC6479A /* NicooBrightnessView.swift */,
+				EF221E7113D31EBFB49A193528903068 /* NicooImgManager.swift */,
+				EE17D5A67C643BA61A8966B43D46AC12 /* NicooLoadedFailedView.swift */,
+				7DD5052FED10A4E3EAAA3324F1F97781 /* NicooNetWorkAlert.swift */,
+				24D841D62111D7E08B5BACD83FBBBD2D /* NicooPlayerControlView.swift */,
+				DDE89E46D4BD1CDFBF3623BC70094441 /* NicooPlayerOrietation.swift */,
+				16737C8AC22476E7840C2735675952DD /* NicooPlayerView.swift */,
+				F4DC6B731DF9B189485FFCE856168BAC /* NicooVideoRequestTask.swift */,
+				501C9E87E310BE41D9962822415F4827 /* Resources */,
+				2CE77AAB084F5FF36BB456EE44F2D4E2 /* Support Files */,
+			);
+			name = NicooPlayer;
+			path = NicooPlayer;
+			sourceTree = "<group>";
+		};
+		8FED81E406AB86F5BC8CECC7509555C8 /* CocoaHTTPServer */ = {
+			isa = PBXGroup;
+			children = (
+				CD5D22B4D46CFB84155CBD282C5CA6A1 /* DAVConnection.h */,
+				38C6E0C44E029C4DC0038207D8AF338E /* DAVConnection.m */,
+				CC3600089E292AF49DCC2854D3903F67 /* DAVResponse.h */,
+				03F9DA50FBF94DD7D359D9388B57C611 /* DAVResponse.m */,
+				87908CF93BADE442A383C8021C50ACC6 /* DDData.h */,
+				36F4A09D314B5B0B43C89E0A74FF11AA /* DDData.m */,
+				D8F6C12B2E70B93DD152EE89CEFC6526 /* DDNumber.h */,
+				B2AF35031DEF13E7FC633D7A80301331 /* DDNumber.m */,
+				AE7DCC37FA5655CB2E6513BB263A54F0 /* DDRange.h */,
+				22C37C7D73A0C1320FBC446EA6D0C5F3 /* DDRange.m */,
+				237EB6693F7456AA8F37342FF66A807C /* DELETEResponse.h */,
+				9264020A682EDFB3F0DC0061076D980B /* DELETEResponse.m */,
+				99520F5861C9C97CCE5407356059ED4F /* HTTPAsyncFileResponse.h */,
+				314D8CBD7D280D71D8A39AC5AD46652B /* HTTPAsyncFileResponse.m */,
+				78862DF9AC0885258B7F6E5AE84D2FD0 /* HTTPAuthenticationRequest.h */,
+				B099AE5E67E53698FB595442C1EEF279 /* HTTPAuthenticationRequest.m */,
+				6FC2A5E6EBD6115F66FAEF75C0F3FD5A /* HTTPConnection.h */,
+				B0CE0B413BD9A8711A115C24CF839DA9 /* HTTPConnection.m */,
+				0C1D1C8FDD877668792E5BC0B3352C86 /* HTTPDataResponse.h */,
+				73859D7473E6709AC4257E8451EF7A79 /* HTTPDataResponse.m */,
+				099EF56C76FF89D6E69BA08E628586BF /* HTTPDynamicFileResponse.h */,
+				684AFE0AFE97CD2EB434DF2E7E5E0481 /* HTTPDynamicFileResponse.m */,
+				339A035300D755DB0DCA0B25B54260A3 /* HTTPFileResponse.h */,
+				DE8A8FCADF0AFEBCDDE5E5EDF3C46331 /* HTTPFileResponse.m */,
+				7368AA9AA953E35084A2234F3077B0CA /* HTTPLogging.h */,
+				160B2D41992BCDB2F98D68B28A2186CC /* HTTPMessage.h */,
+				B0639D0E2AAC557F605E478FC831277C /* HTTPMessage.m */,
+				C78A34ADB01F17BBC599705A811318B6 /* HTTPRedirectResponse.h */,
+				6CF10449D12480E06A27ACF7BD18A9CA /* HTTPRedirectResponse.m */,
+				52C5F21628184C96708F73196039393F /* HTTPResponse.h */,
+				0C999FFD7ABB7BB711996324A8611495 /* HTTPServer.h */,
+				76E46F7927AADD440487B53FBF75BE19 /* HTTPServer.m */,
+				E594F285E3C38B441DC1BC0E3D735567 /* MultipartFormDataParser.h */,
+				AA9CF20734E16E8076D44255B9284A4E /* MultipartFormDataParser.m */,
+				42C7EC36608A9B6ECE8C80AB4F3D0F62 /* MultipartMessageHeader.h */,
+				778AA29960C6525896508AD133EE2E57 /* MultipartMessageHeader.m */,
+				F3450A42886D6F482D3179C8BA983F7A /* MultipartMessageHeaderField.h */,
+				769BFA9D625250077D323B224C584214 /* MultipartMessageHeaderField.m */,
+				8360950CA12CA7F78A217779BF753DD8 /* PUTResponse.h */,
+				E366A76108ECB74142692A35547C7018 /* PUTResponse.m */,
+				9B804025A6284D4989907B18BDA8E5DA /* WebSocket.h */,
+				4ED80633395861599D3A9CC794E1A145 /* WebSocket.m */,
+				CF33B6EAED659E3078043CCCD92C4F65 /* Support Files */,
+			);
+			name = CocoaHTTPServer;
+			path = CocoaHTTPServer;
+			sourceTree = "<group>";
+		};
+		AC24E6E6CE08326C58E0DCFD369686A5 /* CocoaAsyncSocket */ = {
+			isa = PBXGroup;
+			children = (
+				50FECFAC5369B7663A84008425FD01F0 /* GCDAsyncSocket.h */,
+				228B086730AB15AF27344BBD4B958F94 /* GCDAsyncSocket.m */,
+				79823E7A7AB2B9DCB73FAC3C19EE66EF /* GCDAsyncUdpSocket.h */,
+				9262910FDAD901B3580D7B91475561A8 /* GCDAsyncUdpSocket.m */,
+				F657E8D4BDF6F239D9389453D406141A /* Support Files */,
+			);
+			name = CocoaAsyncSocket;
+			path = CocoaAsyncSocket;
+			sourceTree = "<group>";
+		};
+		AF66D1EC0E82D6DA4FBC7DEC222426DF /* Development Pods */ = {
+			isa = PBXGroup;
+			children = (
+				D4AD062DF0E9B559D2166C5E952960F4 /* NicooM3u8Downloader */,
+			);
+			name = "Development Pods";
+			sourceTree = "<group>";
+		};
+		AFA95F4B8D8BF2E3513FCEAC865682CA /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				0AF201D72A45BECD89F0A2E71116B23D /* CocoaLumberjack.modulemap */,
+				62480E175CFBFFDA1D576A6411B20CA9 /* CocoaLumberjack.xcconfig */,
+				7D6C30A930E42A8258016E8AD5D06E58 /* CocoaLumberjack-dummy.m */,
+				8AE1ABC2ED529EA8A7A0EA6B7D3BD468 /* CocoaLumberjack-prefix.pch */,
+				C83CBCE1F8E51EE1DC6FD80956F4AAB0 /* CocoaLumberjack-umbrella.h */,
+				4DB07085FBD2FA432C7E5F57AB4D3610 /* Info.plist */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/CocoaLumberjack";
+			sourceTree = "<group>";
+		};
+		B551DDF7A8A30592EB353BF38863DE72 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				9A5C46F7A09E258FA3D9AC3F5E70E25A /* DDContextFilterLogFormatter.h */,
+				82F79948A0B26708897BF2E66BB279CC /* DDContextFilterLogFormatter.m */,
+				7348A4C9821E5A97DC53DB541EC4D786 /* DDDispatchQueueLogFormatter.h */,
+				BB8491AA2610AFB2CA37C6790A7DF0A6 /* DDDispatchQueueLogFormatter.m */,
+				5075BA0984F2916B35993A2C25430E5B /* DDMultiFormatter.h */,
+				C8921CC01194E280A28435786D8F314E /* DDMultiFormatter.m */,
+			);
+			name = Extensions;
+			sourceTree = "<group>";
+		};
+		B73F12BF41C88979F4AD66C148F9E5DC /* Default */ = {
+			isa = PBXGroup;
+			children = (
+				661C1D392E6AB9A46D912FD8AB40E0F7 /* CocoaLumberjack.h */,
+				DD87B0B35822FAAC7624F082E6E3E553 /* DDAbstractDatabaseLogger.h */,
+				37E896A039B1A367882D0D6E6A6A5322 /* DDAbstractDatabaseLogger.m */,
+				9D28DC561DEDA71A40F584557A258A5C /* DDASLLogCapture.h */,
+				4B33F066BF91D063C9AB2E5CBC6DB5E0 /* DDASLLogCapture.m */,
+				AC42FB248006097B15005DDD049DF1E6 /* DDASLLogger.h */,
+				8A283413F6E6A6DEB9BEF9ACADF80F53 /* DDASLLogger.m */,
+				11156CC236B5805F3D5FB8EA82617CA7 /* DDAssertMacros.h */,
+				06DE06A258816B8BFAE84A6D0CBAC45D /* DDFileLogger.h */,
+				EF5B4F56C0A8F7C15ABEA345513B785D /* DDFileLogger.m */,
+				B2753D4581428760BED38FBE2D036478 /* DDLegacyMacros.h */,
+				7AC89803C78DC35921EF95298FD51F20 /* DDLog.h */,
+				E450F7E5910DDB368150A5D4CFEF6B87 /* DDLog.m */,
+				1E1DEE2D002E350C8070E0A7287F81F8 /* DDLog+LOGV.h */,
+				4BE0B0982D72F036A7C937340EF3A488 /* DDLogMacros.h */,
+				8B965E0C340AD3FC3AC064F0AF959CFE /* DDOSLogger.h */,
+				86F3366DB89B1D9EA7F2BC4B70D71DD9 /* DDOSLogger.m */,
+				E4686011A3D0154953CA1C9EBABFC738 /* DDTTYLogger.h */,
+				C896614E5C6EC8E710D7F5B55BF1E124 /* DDTTYLogger.m */,
+			);
+			name = Default;
+			sourceTree = "<group>";
+		};
+		BEFB9B78E52C8F6B39A7302AE9E72469 /* Pods-NicooM3u8Downloader_Example */ = {
+			isa = PBXGroup;
+			children = (
+				F59817CEC5F2F63311296B62A7781B06 /* Info.plist */,
+				7CE9D2385B0EC2055F5A4D223BE91C01 /* Pods-NicooM3u8Downloader_Example.modulemap */,
+				B9268349F0C8B26C307CF054A6F6A5F8 /* Pods-NicooM3u8Downloader_Example-acknowledgements.markdown */,
+				6252195131322794B6FF9183191A981B /* Pods-NicooM3u8Downloader_Example-acknowledgements.plist */,
+				5051C8767763DE510739E9A00BD17939 /* Pods-NicooM3u8Downloader_Example-dummy.m */,
+				A7C93029ABC85C25E66B0AD5F0F76ABE /* Pods-NicooM3u8Downloader_Example-frameworks.sh */,
+				E730E399C32CCF22EBB2F2E494D4EDBB /* Pods-NicooM3u8Downloader_Example-resources.sh */,
+				EF9A0E99582261E145266CB04F8284DC /* Pods-NicooM3u8Downloader_Example-umbrella.h */,
+				2F083A418D19BB244F6A8E9976C0F990 /* Pods-NicooM3u8Downloader_Example.debug.xcconfig */,
+				4C69EE7B0413B6B6A247C5EF40B1DEA9 /* Pods-NicooM3u8Downloader_Example.release.xcconfig */,
+			);
+			name = "Pods-NicooM3u8Downloader_Example";
+			path = "Target Support Files/Pods-NicooM3u8Downloader_Example";
+			sourceTree = "<group>";
+		};
+		C73065C934489A74614F7F90DA468454 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				B3F4A5C4EF50AD5D3594760481162845 /* CocoaAsyncSocket.framework */,
+				2F81ADF53E0DCDCD465D6C33841773EA /* CocoaLumberjack.framework */,
+				CBA454554D5CBED7E5FC0D30A6E49AF5 /* SnapKit.framework */,
+				62C9535F376C7A283FBE8C760C32C44E /* iOS */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		CF33B6EAED659E3078043CCCD92C4F65 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				F81B2958B7BD13DFA69869D513112141 /* CocoaHTTPServer.modulemap */,
+				3E9A1000C788FC1337C64CC330E31F7C /* CocoaHTTPServer.xcconfig */,
+				457E6514336510A642E32290A2F70F77 /* CocoaHTTPServer-dummy.m */,
+				33C50F4E773D7BACFDBC7E7228269BD0 /* CocoaHTTPServer-prefix.pch */,
+				33D26626296FE34CEF12AFEF4EA9DC2D /* CocoaHTTPServer-umbrella.h */,
+				59B29E662C8E86EF419F6A5470DB0B9E /* Info.plist */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/CocoaHTTPServer";
+			sourceTree = "<group>";
+		};
+		D4AD062DF0E9B559D2166C5E952960F4 /* NicooM3u8Downloader */ = {
+			isa = PBXGroup;
+			children = (
+				D57187A51EAA8712DF07D728D48DAE41 /* NicooDownloadHelper.swift */,
+				CF85956D0B75C965CE0F3116F12F7B63 /* NicooM3u8Parser.swift */,
+				239EA1F44C53962C3DEC32E52A030DE0 /* NicooTsDownloader.swift */,
+				8B82CB90000DB9101668724A9A355861 /* NicooTsListModel.swift */,
+				8DAFA8F2D673163C16809F4C4F49CEDF /* NicooTsModel.swift */,
+				13D89BBC67598785062928DB9FACDFBC /* NicooVideoDownloader.swift */,
+				471EC095966A039E8C151B9C072AF823 /* NicooYagor.swift */,
+				142186A97913EFB5F6340230CA15A877 /* Pod */,
+				71600AB1659C20013217AAD25247C03E /* Support Files */,
+			);
+			name = NicooM3u8Downloader;
+			path = ../..;
+			sourceTree = "<group>";
+		};
+		F657E8D4BDF6F239D9389453D406141A /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				D7F93B8BE1B01FFF7B90E5A7F18877B0 /* CocoaAsyncSocket.modulemap */,
+				CE746045FCACAA39DC9D9BBEF0941D08 /* CocoaAsyncSocket.xcconfig */,
+				9387252A5D234B935D324B5B311D0BE4 /* CocoaAsyncSocket-dummy.m */,
+				AEB820C7F6FFFD945F9F6ACE1B0B67F5 /* CocoaAsyncSocket-prefix.pch */,
+				F788C564C9D38D891A031DC6DE40D40A /* CocoaAsyncSocket-umbrella.h */,
+				484411C625970A88D0A30DF440EBD9BC /* Info.plist */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/CocoaAsyncSocket";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		1AAEFEFBB030088E09775BE7ECCF5463 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				88C56B19FDF52B0B14797574AFF7C476 /* NicooPlayer-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2D9D9A4A954BABABC79B5E6D97B31C04 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5A7FB220667778067D81415311635C8D /* CocoaLumberjack-umbrella.h in Headers */,
+				F1B6DEFB0A7AE942E7250D7BF6604467 /* CocoaLumberjack.h in Headers */,
+				0F809632FF6FC6CBF4E730E43F8F166F /* DDAbstractDatabaseLogger.h in Headers */,
+				BDFB27413838E8FEC62D638C7EBD692F /* DDASLLogCapture.h in Headers */,
+				8D15A4F2AC90099A2C24A9CC2DC5EE3C /* DDASLLogger.h in Headers */,
+				65E247CE801427200FE3AA6C3A876E79 /* DDAssertMacros.h in Headers */,
+				A1643433CE02E5D99B07667D95F35666 /* DDContextFilterLogFormatter.h in Headers */,
+				6ED30BEE8EAEFEABD52A3BDC8501923E /* DDDispatchQueueLogFormatter.h in Headers */,
+				8587FCA258513CF0DD2A880E7915A845 /* DDFileLogger.h in Headers */,
+				DA42D9D50952CDB4EB66ADACDCB0F6CA /* DDLegacyMacros.h in Headers */,
+				A1B33C6938000B6577177B2044987B59 /* DDLog+LOGV.h in Headers */,
+				00B2DA09AB6AB2A60F6CF26BB2CAA787 /* DDLog.h in Headers */,
+				51CFAC1F719227112B0A296AD7FFC45C /* DDLogMacros.h in Headers */,
+				AD9FF81CFBE9D1D0EA539BBAA01583EE /* DDMultiFormatter.h in Headers */,
+				6034CA818DAE2F234FC81AD94F643973 /* DDOSLogger.h in Headers */,
+				22A799C95A184005E50CDA0C9C8C5654 /* DDTTYLogger.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2E51C54A5E30B586B17D58F607190CDF /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D4B702456CF3401B83C491B6CA278BC3 /* Pods-NicooM3u8Downloader_Tests-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		966D4F9A3999B93146688EEC5D08FE86 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9E353EBE79F1A486F7D18A428C6B4C6F /* CocoaHTTPServer-umbrella.h in Headers */,
+				987621B759BC0CB7FB40E57AB0BCDB03 /* DAVConnection.h in Headers */,
+				3FE7088956A525089C38C5862E8ABF87 /* DAVResponse.h in Headers */,
+				FA5CE98BE8651133214F7F1B9EB2DE6B /* DDData.h in Headers */,
+				DCD0E6A2881E01179AFF3F513EA02870 /* DDNumber.h in Headers */,
+				8561E1F85935784712953F2EC1322FC0 /* DDRange.h in Headers */,
+				8F9C778A15FC2DC6603A359761D2FC33 /* DELETEResponse.h in Headers */,
+				EB20DA674587BBF355D1BEE3B91085B9 /* HTTPAsyncFileResponse.h in Headers */,
+				F088AB5BD686396774334E5C26558BA8 /* HTTPAuthenticationRequest.h in Headers */,
+				0071AEC949F85E453C92BB446DAE0D14 /* HTTPConnection.h in Headers */,
+				E56F3062F45FB5DA915200695E985019 /* HTTPDataResponse.h in Headers */,
+				F22104CECA43D949EC04AED41D0C414C /* HTTPDynamicFileResponse.h in Headers */,
+				3B6C5A77B7EB2A871DFC6C63D88C4DDC /* HTTPFileResponse.h in Headers */,
+				92C06D6ADBDB0C54B5ECE91DF8FA318C /* HTTPLogging.h in Headers */,
+				2761E282A8B6AB787A3BF78CD8DE7C92 /* HTTPMessage.h in Headers */,
+				74F55881173320A9D7D53050ABB99D8F /* HTTPRedirectResponse.h in Headers */,
+				35DB2E1F4C0E083F209B727443E11E21 /* HTTPResponse.h in Headers */,
+				4B852F8A2B6634AB192C2C01FB6F9587 /* HTTPServer.h in Headers */,
+				E84050DF145F2FDB929D8C0BF05D8EE8 /* MultipartFormDataParser.h in Headers */,
+				3539CC7E03E0566FD505B77BC1DBD3B8 /* MultipartMessageHeader.h in Headers */,
+				1C47487F1488ABDD9DC9E52797389870 /* MultipartMessageHeaderField.h in Headers */,
+				3E8C76DB3F0D84D59A3201564AE7E0E2 /* PUTResponse.h in Headers */,
+				41D5ABC3A3718B7D3B85148EF5758B3D /* WebSocket.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9D2151C1FCB60BD32F60A81DCBD5D0E5 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				27CE7C456A381A0832C091B60C5C076D /* SnapKit-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C30AC6B5C2D1BEA914E6C8CCE50A14F0 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D83D2E7D4EBE424C5EDB78320269539D /* NicooM3u8Downloader-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C7A793692A04A0F9F237D8F6AA7CA8BB /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				09548317A8359AF754F56B51A444D5DB /* Pods-NicooM3u8Downloader_Example-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FD5BD758EC28E0FD3E8BC2A2CB93A37B /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				276F082DA0A032AB6F2998B3A8E2FA96 /* CocoaAsyncSocket-umbrella.h in Headers */,
+				84D92FC60D98C077AB3A6D56AEBE8FEB /* GCDAsyncSocket.h in Headers */,
+				946B8DE90A7C6B3872C82AA2AF240118 /* GCDAsyncUdpSocket.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		149585F5448242F87D6440C89714A051 /* CocoaHTTPServer */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 0B830F4EC6B8F9DF500766687C50285A /* Build configuration list for PBXNativeTarget "CocoaHTTPServer" */;
+			buildPhases = (
+				966D4F9A3999B93146688EEC5D08FE86 /* Headers */,
+				DA19620D287B90751A39718BCD8B8BBC /* Sources */,
+				D2A3F5BA1FEABFBE1C9748398B5F9CD7 /* Frameworks */,
+				4D374B361723D2E84D2E64088AE7571C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				A10647F8920CB825FA57BB87FB01B5D1 /* PBXTargetDependency */,
+				2B8235BE6BC463D2D1CD7E6D5EDC78D0 /* PBXTargetDependency */,
+			);
+			name = CocoaHTTPServer;
+			productName = CocoaHTTPServer;
+			productReference = 323034164CC042EAA9292369D011DCB7 /* CocoaHTTPServer.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		18279A9E612B206865EEBFC4651DDBB5 /* NicooPlayer-NicooPlayer */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 76D9D4619E57528F69AD6EE728642684 /* Build configuration list for PBXNativeTarget "NicooPlayer-NicooPlayer" */;
+			buildPhases = (
+				7C6CADBACF092B445EEC05ACA4EDFF50 /* Sources */,
+				DD6D9FD3390612885F3D44C0550B8000 /* Frameworks */,
+				6DA0EB08DE16BAE7E92AF3510B9228AD /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "NicooPlayer-NicooPlayer";
+			productName = "NicooPlayer-NicooPlayer";
+			productReference = 215CD396F662A9961CD4D28E3D8D1E72 /* NicooPlayer.bundle */;
+			productType = "com.apple.product-type.bundle";
+		};
+		18B8DB3EFA45F9069CDF5B554425973E /* NicooPlayer */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E606B2C6C7B982D9297C42085A492CBB /* Build configuration list for PBXNativeTarget "NicooPlayer" */;
+			buildPhases = (
+				1AAEFEFBB030088E09775BE7ECCF5463 /* Headers */,
+				D3B5D8B203DAD475638E90F8D66A56BF /* Sources */,
+				5BA1C989828C6C11BAC3579CF79EC5A7 /* Frameworks */,
+				652113E9EBA71913CA7585B9748378A2 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				9273507AAC8B72221BD6DFF0A7500DC9 /* PBXTargetDependency */,
+				B206A7F540377202F349DD10981E09DF /* PBXTargetDependency */,
+			);
+			name = NicooPlayer;
+			productName = NicooPlayer;
+			productReference = DDC76B498CCDD2F84310BAE947CFBCD1 /* NicooPlayer.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		299EB6BF742F436C0AB66363EA68575A /* CocoaLumberjack */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D508BE78505E0889E6967749764D0983 /* Build configuration list for PBXNativeTarget "CocoaLumberjack" */;
+			buildPhases = (
+				2D9D9A4A954BABABC79B5E6D97B31C04 /* Headers */,
+				BD0DC60FAE53AC06B9532C39F0997334 /* Sources */,
+				16DF8779A54292E6998B3544A52438BA /* Frameworks */,
+				169BC5481B8C73A1C2467ADFAA44C195 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = CocoaLumberjack;
+			productName = CocoaLumberjack;
+			productReference = BB1B76CA340CFA481F2B035BA8C7B69D /* CocoaLumberjack.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		52647C16D181E0C5C4058FF161452E7D /* SnapKit */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4E5FF87B5C52E34FC26048A8F14A0423 /* Build configuration list for PBXNativeTarget "SnapKit" */;
+			buildPhases = (
+				9D2151C1FCB60BD32F60A81DCBD5D0E5 /* Headers */,
+				6EB0B84892C122FFB797DE7CF86266F1 /* Sources */,
+				8621055DF0DD7CA7AB841F23DE799C86 /* Frameworks */,
+				AB2E53CE1EA0493818E77B6A69030C39 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SnapKit;
+			productName = SnapKit;
+			productReference = CB28FB9C4EFD76F71E63E35670EAF401 /* SnapKit.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		53E781B694449EFCDAE19A865962DF8B /* Pods-NicooM3u8Downloader_Tests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5191A4B47BB92512E33AF87CB757DE24 /* Build configuration list for PBXNativeTarget "Pods-NicooM3u8Downloader_Tests" */;
+			buildPhases = (
+				2E51C54A5E30B586B17D58F607190CDF /* Headers */,
+				257FE2157439A077F5E08DE23B24D55F /* Sources */,
+				E264125D82DCD4492CC6C1C488A2ED5F /* Frameworks */,
+				3D371B19F1610BC0319F8EDEC3B8C21D /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				8DD1EA1F29F7E3DE32A460FBFC115438 /* PBXTargetDependency */,
+			);
+			name = "Pods-NicooM3u8Downloader_Tests";
+			productName = "Pods-NicooM3u8Downloader_Tests";
+			productReference = FC4F0F82A53673BCB21D29D7A6C2AE1A /* Pods_NicooM3u8Downloader_Tests.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		8C764BFB6CE2AADE59C37127671BF588 /* NicooM3u8Downloader */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 839318F0807652AD23EE2792FC4F4915 /* Build configuration list for PBXNativeTarget "NicooM3u8Downloader" */;
+			buildPhases = (
+				C30AC6B5C2D1BEA914E6C8CCE50A14F0 /* Headers */,
+				463927DF8362D7841A3E03BF48702BE5 /* Sources */,
+				FC4596891589D68D09801D470E55F171 /* Frameworks */,
+				106717B4FB0776C2467E63A0E6AF6E30 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = NicooM3u8Downloader;
+			productName = NicooM3u8Downloader;
+			productReference = F68A5C07A0FE3E432B21188DD1FDFF00 /* NicooM3u8Downloader.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		CA1C2C5192AC096C35F54C534DFD0403 /* Pods-NicooM3u8Downloader_Example */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 0EDA6F9D2A954410DE0820EF439D427D /* Build configuration list for PBXNativeTarget "Pods-NicooM3u8Downloader_Example" */;
+			buildPhases = (
+				C7A793692A04A0F9F237D8F6AA7CA8BB /* Headers */,
+				26BD2DD3965254468D219D0BB146D342 /* Sources */,
+				6E58E8F0556AADF0FE907EAEE3129970 /* Frameworks */,
+				330AE2D98D68155254FC977305AE7D84 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				B7B395747A601E14FD40315ED32CDC6F /* PBXTargetDependency */,
+				5E6BDF642703DCE754A5C4A69CAA1EFF /* PBXTargetDependency */,
+				0D305AF1C0E4070E4BC5E6A1A1ECA274 /* PBXTargetDependency */,
+				877A2E7E32F178CC19D4549E5CABC76B /* PBXTargetDependency */,
+				3CC46FD6DFAB93A1B12945C9789BC02A /* PBXTargetDependency */,
+				55E35A7BB343EB34CEAC1F306DB42D73 /* PBXTargetDependency */,
+			);
+			name = "Pods-NicooM3u8Downloader_Example";
+			productName = "Pods-NicooM3u8Downloader_Example";
+			productReference = BFC87D2F1398E1C09CA741CC5CC2E307 /* Pods_NicooM3u8Downloader_Example.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		EB9F16A11CCB7B75DFD4C14783C83019 /* CocoaAsyncSocket */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DB4B18BC646AD400FE52808E62839AB5 /* Build configuration list for PBXNativeTarget "CocoaAsyncSocket" */;
+			buildPhases = (
+				FD5BD758EC28E0FD3E8BC2A2CB93A37B /* Headers */,
+				B9D0B0602F04A8CCC471C2F11D11E027 /* Sources */,
+				73EDCCE02D9536A6E6AD00154B166BFD /* Frameworks */,
+				3337958E133C08BB64CFD881FEC29B2D /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = CocoaAsyncSocket;
+			productName = CocoaAsyncSocket;
+			productReference = 7D62C106F592F9425C42F45B13C84B2A /* CocoaAsyncSocket.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		D41D8CD98F00B204E9800998ECF8427E /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0930;
+				LastUpgradeCheck = 0930;
+			};
+			buildConfigurationList = 2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 7DB346D0F39D3F0E887471402A8071AB;
+			productRefGroup = 0C1449B759633524C69EE2EB0943FB8D /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				EB9F16A11CCB7B75DFD4C14783C83019 /* CocoaAsyncSocket */,
+				149585F5448242F87D6440C89714A051 /* CocoaHTTPServer */,
+				299EB6BF742F436C0AB66363EA68575A /* CocoaLumberjack */,
+				8C764BFB6CE2AADE59C37127671BF588 /* NicooM3u8Downloader */,
+				18B8DB3EFA45F9069CDF5B554425973E /* NicooPlayer */,
+				18279A9E612B206865EEBFC4651DDBB5 /* NicooPlayer-NicooPlayer */,
+				CA1C2C5192AC096C35F54C534DFD0403 /* Pods-NicooM3u8Downloader_Example */,
+				53E781B694449EFCDAE19A865962DF8B /* Pods-NicooM3u8Downloader_Tests */,
+				52647C16D181E0C5C4058FF161452E7D /* SnapKit */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		106717B4FB0776C2467E63A0E6AF6E30 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		169BC5481B8C73A1C2467ADFAA44C195 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		330AE2D98D68155254FC977305AE7D84 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3337958E133C08BB64CFD881FEC29B2D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3D371B19F1610BC0319F8EDEC3B8C21D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4D374B361723D2E84D2E64088AE7571C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		652113E9EBA71913CA7585B9748378A2 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D9A39AB2EDE7D1834CB132411F006C78 /* NicooPlayer.bundle in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6DA0EB08DE16BAE7E92AF3510B9228AD /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				483550818D9DB29960A3C0A4EDBEAA0F /* back@2x.png in Resources */,
+				5D40E76D7B63EAB656C38465C0FA82EC /* back@3x.png in Resources */,
+				969566489C9E0F50BB5D4C61283BA30A /* back_hight@2x.png in Resources */,
+				C9F86094B8144E050997AFFC893A2D50 /* back_hight@3x.png in Resources */,
+				31650FD0D39FDBB9B8E1260CDF6D14C8 /* backward@2x.png in Resources */,
+				F3D8383F62E62A3C78408939F305C427 /* backward@3x.png in Resources */,
+				3F117FFD6021A389039E9BC45E53E283 /* forward@2x.png in Resources */,
+				9B83BFFFCCB876DD61377A279EFE64AF /* forward@3x.png in Resources */,
+				FAB0B9DF45F6E60CB117F8A71A629F97 /* lockscreen@2x.png in Resources */,
+				E6DB4B2856050E0BCF01E9A25D74A1B4 /* lockscreen@3x.png in Resources */,
+				5F139CED69BE7108D2FB62A92D362919 /* NicooPlayer_fullscreen.png in Resources */,
+				844B0B94FC337363B0EA6A8D081CAFD4 /* NicooPlayer_fullscreen@2x.png in Resources */,
+				5895FC7BBC49245B133174D8C3A1C869 /* NicooPlayer_fullscreen@3x.png in Resources */,
+				8C589C8886BE196C79CF17607A21A3AF /* NicooPlayer_slider.png in Resources */,
+				A7E0C88B2B04A3240FFCDA9DCE13FE6A /* NicooPlayer_slider@2x.png in Resources */,
+				2E45DDE6211FDC0D7C7DDA645FD2D610 /* NicooPlayer_slider@3x.png in Resources */,
+				1EADEB30F808CA94D59BE5CDF31DA72E /* pause@2x.png in Resources */,
+				6405C9FC5787A8E0F6BFE6ED6F7A691F /* pause@3x.png in Resources */,
+				8C0628C348D0036B15A1F5D97ED1BBFD /* play@2x.png in Resources */,
+				19D86BB5F6F93BF1538C5697558DE802 /* play@3x.png in Resources */,
+				B64D38EE4981701B657D86B24F7556C9 /* player_brightness@2x.png in Resources */,
+				11E2C92E2AA7B07A019D1897F2C15033 /* player_close.png in Resources */,
+				808AF2E77430460EBFBC5C632BD98CEA /* player_close@2x.png in Resources */,
+				5F76B3775C0E43288A0C46B9F627359D /* player_close@3x.png in Resources */,
+				7A30324DF205553C13AE21497DB11056 /* Player_pause@2x.png in Resources */,
+				55B732A6B14AF9E751326D406E85E7F4 /* Player_pause@3x.png in Resources */,
+				6C0A12B63E196DCDA7E4E14BF2118AE3 /* replay@2x.png in Resources */,
+				945DDD83B4F79DBBF74111D7CE8C7310 /* replay@3x.png in Resources */,
+				9CFFA1EEFC04D8AAD4158E5C584D49D8 /* replay_hight@2x.png in Resources */,
+				C676B90AC87268BA00BA09C776E571E0 /* replay_hight@3x.png in Resources */,
+				B7BAA3EBF5068068AAAC4676073DAF9E /* share@2x.png in Resources */,
+				BCF09463716EFDAF623A79B9D5255E2C /* share@3x.png in Resources */,
+				2DD25467C20DCCDC7462E7E8841BFF27 /* share_hight@2x.png in Resources */,
+				BE6CE881C6572B686C7961788E4C3BC5 /* share_hight@3x.png in Resources */,
+				AC5E73427BCDF9B4D65A618854DB03A4 /* shrinkScreen@2x.png in Resources */,
+				7F3A04E378949FFC9A0E11CFE2C2C418 /* shrinkScreen@3x.png in Resources */,
+				78323653C1B41AC0E40FB8D1D7955B5A /* sliderflash.png in Resources */,
+				2552D834A1B0057819C9ADB4746E59DF /* sliderflash@2x.png in Resources */,
+				F23F0B651BA12FC9D6E6EED31C18A013 /* sliderflash@3x.png in Resources */,
+				E2F6D2E2C6AB02F997CDA85E32F9907D /* sliderHightLight.png in Resources */,
+				8A788F680F7EAC8DC318A597B9CEA690 /* unlock@2x.png in Resources */,
+				95D6C19862B6441AC1DF2BBD76B3D513 /* unlock@3x.png in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AB2E53CE1EA0493818E77B6A69030C39 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		257FE2157439A077F5E08DE23B24D55F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3EBB8EC00BAA153C91707ACEFDFF5CA6 /* Pods-NicooM3u8Downloader_Tests-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		26BD2DD3965254468D219D0BB146D342 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				35F16912E8675AC4C63424311C0DF20B /* Pods-NicooM3u8Downloader_Example-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		463927DF8362D7841A3E03BF48702BE5 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B8AC4C0231C87380BA5353B4BBC19982 /* NicooDownloadHelper.swift in Sources */,
+				1211753F80137F3DF7B132852D706EFE /* NicooM3u8Downloader-dummy.m in Sources */,
+				E29E114EC9B7024DE6714CB9C81F2503 /* NicooM3u8Parser.swift in Sources */,
+				099D7F88D22ABF720E10E0C597060EB5 /* NicooTsDownloader.swift in Sources */,
+				2B5F59B200E253E5D460CF735C51860A /* NicooTsListModel.swift in Sources */,
+				0E6F0D77D3B064D9DF84918D7FC1C0D7 /* NicooTsModel.swift in Sources */,
+				45BAD35C457BF82A44C5269FD3396994 /* NicooVideoDownloader.swift in Sources */,
+				44446460BAF6FE2CBBD997C01AABB232 /* NicooYagor.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6EB0B84892C122FFB797DE7CF86266F1 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				23175EA1EF2E7C6BE3DA76D541B4793B /* Constraint.swift in Sources */,
+				6483761D441DCE875FECB403FB1BBC50 /* ConstraintAttributes.swift in Sources */,
+				7FAE73EA22F0C6D7E275D445EABC927A /* ConstraintConfig.swift in Sources */,
+				50D5DA90F8F9EA36F2774893C96207E1 /* ConstraintConstantTarget.swift in Sources */,
+				948977D2A72EA5C894BC680802B7ED11 /* ConstraintDescription.swift in Sources */,
+				68323C5CD63706D58551EF53BD47C3CE /* ConstraintDSL.swift in Sources */,
+				D835C27379BF35EA3096A687162F2134 /* ConstraintInsets.swift in Sources */,
+				CFBB55A21DA77BD2C550FB221CEAA669 /* ConstraintInsetTarget.swift in Sources */,
+				4160F5B43923858F6D5609D8C6325D48 /* ConstraintItem.swift in Sources */,
+				6194C25DF09863EF003205354C17EE00 /* ConstraintLayoutGuide+Extensions.swift in Sources */,
+				D46F3CD3DC4CB3E6E8912719961401DC /* ConstraintLayoutGuide.swift in Sources */,
+				744FDD16087F96F15E56306BFB137C74 /* ConstraintLayoutGuideDSL.swift in Sources */,
+				15D79E4D1AA4DD25E1FC701B379C42C3 /* ConstraintLayoutSupport.swift in Sources */,
+				E2C5BB75EB0D86A798C70EA72228E172 /* ConstraintLayoutSupportDSL.swift in Sources */,
+				9AF3C0481DD8DB4A59CBDC40FC31E4BF /* ConstraintMaker.swift in Sources */,
+				A64436FBA54C2782D2CC15B52CF63829 /* ConstraintMakerEditable.swift in Sources */,
+				47A815759793DEBA29BC6145485A4801 /* ConstraintMakerExtendable.swift in Sources */,
+				46658A254D636A8047209CFF71516C27 /* ConstraintMakerFinalizable.swift in Sources */,
+				FDB1B5B11C85A7E46D235FC4F002E5E7 /* ConstraintMakerPriortizable.swift in Sources */,
+				1E70BEDA661D8683BED9377E5193395E /* ConstraintMakerRelatable.swift in Sources */,
+				A649D23DE2E89BD20658A3338E76C9D0 /* ConstraintMultiplierTarget.swift in Sources */,
+				E304DF00BD5F77FC582576D249DF088C /* ConstraintOffsetTarget.swift in Sources */,
+				FA994DE20E8286E0D1048335F7420FFD /* ConstraintPriority.swift in Sources */,
+				02FE46561E36AD1F540C55FD3754D179 /* ConstraintPriorityTarget.swift in Sources */,
+				1C2BE1AF9082F82C2AE7B0600DD680E5 /* ConstraintRelatableTarget.swift in Sources */,
+				A76989CE17F0DA6AED1CA6C65D346580 /* ConstraintRelation.swift in Sources */,
+				33D55D4F311552160881DB730ABE4EE6 /* ConstraintView+Extensions.swift in Sources */,
+				A1DBFC083FBC1229DC8DCFEF86927BF2 /* ConstraintView.swift in Sources */,
+				0F30E394FBE6D7E0E23AF5D5F62ECE74 /* ConstraintViewDSL.swift in Sources */,
+				54978F52F781CE79EB51C69C51DFF051 /* Debugging.swift in Sources */,
+				8B95F1E4D5493002B72AD111B696C139 /* LayoutConstraint.swift in Sources */,
+				9E130F7204E56100B532B8AB9C90F671 /* LayoutConstraintItem.swift in Sources */,
+				06EA3E9FDFEC4C10B37AB49D22466079 /* SnapKit-dummy.m in Sources */,
+				238238853047C37CAC5238B9384B964A /* Typealiases.swift in Sources */,
+				C4644F22A4671A214816B2DE192F9497 /* UILayoutSupport+Extensions.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7C6CADBACF092B445EEC05ACA4EDFF50 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B9D0B0602F04A8CCC471C2F11D11E027 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4EB100FF9229539CA4094551779BF2BE /* CocoaAsyncSocket-dummy.m in Sources */,
+				AC166C66311BCAAAD1D9289A80E51CCF /* GCDAsyncSocket.m in Sources */,
+				30169A0026017D898DAC180CC3218F79 /* GCDAsyncUdpSocket.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BD0DC60FAE53AC06B9532C39F0997334 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4AE9F3F410ECC6787944021641543E5F /* CocoaLumberjack-dummy.m in Sources */,
+				ADCBC3BEF7A476686A69B769E55F4DEC /* DDAbstractDatabaseLogger.m in Sources */,
+				2728CB00D6E65C00F15A2EA6581DBFA0 /* DDASLLogCapture.m in Sources */,
+				C4731FBC52118A47929BB354A46C65DF /* DDASLLogger.m in Sources */,
+				FC3A598EDF86708280832CDBFF254939 /* DDContextFilterLogFormatter.m in Sources */,
+				61CA1ABFB5C79F6150B3E51C90CEFCE4 /* DDDispatchQueueLogFormatter.m in Sources */,
+				C4D09DE3302182DF69B37EC6948B149A /* DDFileLogger.m in Sources */,
+				A03FFBD008E31B73B2FBE0301B2140BF /* DDLog.m in Sources */,
+				3F0C1478DD19A7FB9E9F3928EBDAB4EC /* DDMultiFormatter.m in Sources */,
+				7EF7A12B3F8245CE63E8C2628107DC56 /* DDOSLogger.m in Sources */,
+				0368600B80F6BD668DA173CA12C38EB9 /* DDTTYLogger.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D3B5D8B203DAD475638E90F8D66A56BF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				58D70EFB271E5D8C3F7BF83306702018 /* NicooAssetResourceLoader.swift in Sources */,
+				7F929F6B345C42E5FEC0D6C52A36A938 /* NicooBrightnessView.swift in Sources */,
+				BBAFAF2ED24E85DCF693DF39C519350D /* NicooImgManager.swift in Sources */,
+				E293480982AE2CF8033DB29730F8E351 /* NicooLoadedFailedView.swift in Sources */,
+				1B7D6DA96833839C39617BD826AB106B /* NicooNetWorkAlert.swift in Sources */,
+				C93291E9C4544637AAA8E4A90F95EC8E /* NicooPlayer-dummy.m in Sources */,
+				7031F5A32251E6CA6B796616A3EACADB /* NicooPlayerControlView.swift in Sources */,
+				69206852B5721C2BA4596E26977090E3 /* NicooPlayerOrietation.swift in Sources */,
+				AC645E0DD9EC720AD59ABA9AD4BBA23A /* NicooPlayerView.swift in Sources */,
+				C3D35EB19E7AEDF6C6C5E7505512CAD2 /* NicooVideoRequestTask.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DA19620D287B90751A39718BCD8B8BBC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D3878105F53ACDC7006EE04ABAE1C144 /* CocoaHTTPServer-dummy.m in Sources */,
+				CDE9C3FCF57D646FEADCE6ACDCD5DC92 /* DAVConnection.m in Sources */,
+				97A2960E35E3247D55CD716AA995253B /* DAVResponse.m in Sources */,
+				6C79B5B7919CFC3C3A6F0361BDC999F7 /* DDData.m in Sources */,
+				FD1FA9B52A43DDDFA40FDBDE0A1D0AF3 /* DDNumber.m in Sources */,
+				BE70029E33315240B9E1B6A755A510D6 /* DDRange.m in Sources */,
+				F1C348BC3654228589EBB1C209559180 /* DELETEResponse.m in Sources */,
+				7DEDF288DD0C6DFA15C0AFF2CC6BE116 /* HTTPAsyncFileResponse.m in Sources */,
+				F04609FE7BFF1098095BC953E3C9C6D4 /* HTTPAuthenticationRequest.m in Sources */,
+				794B2E2980B60E6C24318C96C79C81BF /* HTTPConnection.m in Sources */,
+				D2A8605EE5DE421D881C5DBA81929274 /* HTTPDataResponse.m in Sources */,
+				EDF1640E3702085DED7B671FCFBFAFEE /* HTTPDynamicFileResponse.m in Sources */,
+				0CABEF4E8EB33FE9CC433EBF91080E7C /* HTTPFileResponse.m in Sources */,
+				BC7A5354F99DCF0118A107612342FB42 /* HTTPMessage.m in Sources */,
+				EE2262242768D4E7CDB921CCE3CC0DDB /* HTTPRedirectResponse.m in Sources */,
+				8D7924506B15C24EB2D25353D2F7592D /* HTTPServer.m in Sources */,
+				66298E62CE831C4B702A53DBB44ED8F0 /* MultipartFormDataParser.m in Sources */,
+				9ABEDA4D5511849C565F55ED86AE6632 /* MultipartMessageHeader.m in Sources */,
+				9FD15B9001391F8BF5038244B6E06146 /* MultipartMessageHeaderField.m in Sources */,
+				6D0F573033F65511431CB5EC3A8A7328 /* PUTResponse.m in Sources */,
+				A3FBD50977D7D596D3F3DCCA7747CAF6 /* WebSocket.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		0D305AF1C0E4070E4BC5E6A1A1ECA274 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = CocoaLumberjack;
+			target = 299EB6BF742F436C0AB66363EA68575A /* CocoaLumberjack */;
+			targetProxy = FDD451BB2AB987AD561F2B23F979A33E /* PBXContainerItemProxy */;
+		};
+		2B8235BE6BC463D2D1CD7E6D5EDC78D0 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = CocoaLumberjack;
+			target = 299EB6BF742F436C0AB66363EA68575A /* CocoaLumberjack */;
+			targetProxy = DB5F67BBC0A0BEF5B4F6AE4139F087DA /* PBXContainerItemProxy */;
+		};
+		3CC46FD6DFAB93A1B12945C9789BC02A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = NicooPlayer;
+			target = 18B8DB3EFA45F9069CDF5B554425973E /* NicooPlayer */;
+			targetProxy = 0B9EC56FE2AD0775A696F86D4D759D73 /* PBXContainerItemProxy */;
+		};
+		55E35A7BB343EB34CEAC1F306DB42D73 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = SnapKit;
+			target = 52647C16D181E0C5C4058FF161452E7D /* SnapKit */;
+			targetProxy = 06E0D1D75D66F64236E1577DEEE106C5 /* PBXContainerItemProxy */;
+		};
+		5E6BDF642703DCE754A5C4A69CAA1EFF /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = CocoaHTTPServer;
+			target = 149585F5448242F87D6440C89714A051 /* CocoaHTTPServer */;
+			targetProxy = 63DD4ACED6E0DE2E6E88B1A7D6E2985B /* PBXContainerItemProxy */;
+		};
+		877A2E7E32F178CC19D4549E5CABC76B /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = NicooM3u8Downloader;
+			target = 8C764BFB6CE2AADE59C37127671BF588 /* NicooM3u8Downloader */;
+			targetProxy = B38BB6BD30DAB11102FD7970B25DDDD9 /* PBXContainerItemProxy */;
+		};
+		8DD1EA1F29F7E3DE32A460FBFC115438 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "Pods-NicooM3u8Downloader_Example";
+			target = CA1C2C5192AC096C35F54C534DFD0403 /* Pods-NicooM3u8Downloader_Example */;
+			targetProxy = C4AD51B2B5DA915AD18B80B3A0E78136 /* PBXContainerItemProxy */;
+		};
+		9273507AAC8B72221BD6DFF0A7500DC9 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "NicooPlayer-NicooPlayer";
+			target = 18279A9E612B206865EEBFC4651DDBB5 /* NicooPlayer-NicooPlayer */;
+			targetProxy = 2FEA9E33732160B90F4FF6F18979B324 /* PBXContainerItemProxy */;
+		};
+		A10647F8920CB825FA57BB87FB01B5D1 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = CocoaAsyncSocket;
+			target = EB9F16A11CCB7B75DFD4C14783C83019 /* CocoaAsyncSocket */;
+			targetProxy = 522E87D8F2F608FE4090ADF820BE5DA9 /* PBXContainerItemProxy */;
+		};
+		B206A7F540377202F349DD10981E09DF /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = SnapKit;
+			target = 52647C16D181E0C5C4058FF161452E7D /* SnapKit */;
+			targetProxy = BB647F8AD82952CF022833D9CDE10497 /* PBXContainerItemProxy */;
+		};
+		B7B395747A601E14FD40315ED32CDC6F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = CocoaAsyncSocket;
+			target = EB9F16A11CCB7B75DFD4C14783C83019 /* CocoaAsyncSocket */;
+			targetProxy = 1F7AD843A5B63BAB254B8189CAA891C8 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		2696518487E915BD5426A0FBC93B91CB /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 62480E175CFBFFDA1D576A6411B20CA9 /* CocoaLumberjack.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/CocoaLumberjack/CocoaLumberjack-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/CocoaLumberjack/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/CocoaLumberjack/CocoaLumberjack.modulemap";
+				PRODUCT_MODULE_NAME = CocoaLumberjack;
+				PRODUCT_NAME = CocoaLumberjack;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		387432046226FB2620664004445DC484 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3E9A1000C788FC1337C64CC330E31F7C /* CocoaHTTPServer.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/CocoaHTTPServer/CocoaHTTPServer-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/CocoaHTTPServer/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/CocoaHTTPServer/CocoaHTTPServer.modulemap";
+				PRODUCT_MODULE_NAME = CocoaHTTPServer;
+				PRODUCT_NAME = CocoaHTTPServer;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		398FED938046ED0D611483E52987F908 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = D9E115A23697DD49086C5664AE747F25 /* NicooM3u8Downloader.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/NicooM3u8Downloader/NicooM3u8Downloader-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/NicooM3u8Downloader/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/NicooM3u8Downloader/NicooM3u8Downloader.modulemap";
+				PRODUCT_MODULE_NAME = NicooM3u8Downloader;
+				PRODUCT_NAME = NicooM3u8Downloader;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		4C36529463A7715AF4126B81DC8926E2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = A61C92E6374932140A233B0C5DC63320 /* SnapKit.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/SnapKit/SnapKit-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/SnapKit/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/SnapKit/SnapKit.modulemap";
+				PRODUCT_MODULE_NAME = SnapKit;
+				PRODUCT_NAME = SnapKit;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		50646285DD9FD95AF390BDA3FB1948EA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGNING_ALLOWED = NO;
+				CODE_SIGNING_REQUIRED = NO;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_DEBUG=1",
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 4.2;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Debug;
+		};
+		5067DDA4924A1F4B647A013997D7A61D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3E9A1000C788FC1337C64CC330E31F7C /* CocoaHTTPServer.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/CocoaHTTPServer/CocoaHTTPServer-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/CocoaHTTPServer/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/CocoaHTTPServer/CocoaHTTPServer.modulemap";
+				PRODUCT_MODULE_NAME = CocoaHTTPServer;
+				PRODUCT_NAME = CocoaHTTPServer;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		53EE40A9A61B9AEB02058DF648DA3864 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4B62DC718A4CD300CB1C339EA6A9A239 /* NicooPlayer.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CONFIGURATION_BUILD_DIR = "$(BUILD_DIR)/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/NicooPlayer";
+				INFOPLIST_FILE = "Target Support Files/NicooPlayer/ResourceBundle-NicooPlayer-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				PRODUCT_NAME = NicooPlayer;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				WRAPPER_EXTENSION = bundle;
+			};
+			name = Release;
+		};
+		54D5246C66ECDB3824F21787B41AA8AE /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = CE746045FCACAA39DC9D9BBEF0941D08 /* CocoaAsyncSocket.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/CocoaAsyncSocket/CocoaAsyncSocket-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/CocoaAsyncSocket/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/CocoaAsyncSocket/CocoaAsyncSocket.modulemap";
+				PRODUCT_MODULE_NAME = CocoaAsyncSocket;
+				PRODUCT_NAME = CocoaAsyncSocket;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		58DCB2BA7C34E84C00C38CEF18A96D11 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGNING_ALLOWED = NO;
+				CODE_SIGNING_REQUIRED = NO;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_RELEASE=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_VERSION = 4.2;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Release;
+		};
+		682C5C03F505C703A860D04B98D9F5DB /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4C69EE7B0413B6B6A247C5EF40B1DEA9 /* Pods-NicooM3u8Downloader_Example.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-NicooM3u8Downloader_Example/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-NicooM3u8Downloader_Example/Pods-NicooM3u8Downloader_Example.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		762AB7D89F0485E4058FC46BA9FE2DF1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = D9E115A23697DD49086C5664AE747F25 /* NicooM3u8Downloader.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/NicooM3u8Downloader/NicooM3u8Downloader-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/NicooM3u8Downloader/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/NicooM3u8Downloader/NicooM3u8Downloader.modulemap";
+				PRODUCT_MODULE_NAME = NicooM3u8Downloader;
+				PRODUCT_NAME = NicooM3u8Downloader;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		8A3623CB7DA252FF6AD6677303E7283B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = A61C92E6374932140A233B0C5DC63320 /* SnapKit.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/SnapKit/SnapKit-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/SnapKit/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/SnapKit/SnapKit.modulemap";
+				PRODUCT_MODULE_NAME = SnapKit;
+				PRODUCT_NAME = SnapKit;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		A15E7050DAAF16A6E9432A9F3B10BF4F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 62480E175CFBFFDA1D576A6411B20CA9 /* CocoaLumberjack.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/CocoaLumberjack/CocoaLumberjack-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/CocoaLumberjack/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/CocoaLumberjack/CocoaLumberjack.modulemap";
+				PRODUCT_MODULE_NAME = CocoaLumberjack;
+				PRODUCT_NAME = CocoaLumberjack;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		A34AEFCF764CBA670B9032FAE75789D1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4B62DC718A4CD300CB1C339EA6A9A239 /* NicooPlayer.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/NicooPlayer/NicooPlayer-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/NicooPlayer/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/NicooPlayer/NicooPlayer.modulemap";
+				PRODUCT_MODULE_NAME = NicooPlayer;
+				PRODUCT_NAME = NicooPlayer;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		B5BB4B8E7F3E227F6DB7E43EDC8B3A82 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = CE746045FCACAA39DC9D9BBEF0941D08 /* CocoaAsyncSocket.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/CocoaAsyncSocket/CocoaAsyncSocket-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/CocoaAsyncSocket/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/CocoaAsyncSocket/CocoaAsyncSocket.modulemap";
+				PRODUCT_MODULE_NAME = CocoaAsyncSocket;
+				PRODUCT_NAME = CocoaAsyncSocket;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		B97B2A7192C1586C9B7BB6F1F083014C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = A78FAA894C2D43017FDCA81FE76B57D8 /* Pods-NicooM3u8Downloader_Tests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-NicooM3u8Downloader_Tests/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-NicooM3u8Downloader_Tests/Pods-NicooM3u8Downloader_Tests.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		C2BA69898C83891E99750365D982B59E /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = F9180C70FB6FBC4C7507DF0B6A018F70 /* Pods-NicooM3u8Downloader_Tests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-NicooM3u8Downloader_Tests/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-NicooM3u8Downloader_Tests/Pods-NicooM3u8Downloader_Tests.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		D5D7C5A5A992562C2FFB81595997BF85 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2F083A418D19BB244F6A8E9976C0F990 /* Pods-NicooM3u8Downloader_Example.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-NicooM3u8Downloader_Example/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-NicooM3u8Downloader_Example/Pods-NicooM3u8Downloader_Example.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		E6BD3E7FFC17CD6396F1C82389C8BBAD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4B62DC718A4CD300CB1C339EA6A9A239 /* NicooPlayer.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CONFIGURATION_BUILD_DIR = "$(BUILD_DIR)/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/NicooPlayer";
+				INFOPLIST_FILE = "Target Support Files/NicooPlayer/ResourceBundle-NicooPlayer-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				PRODUCT_NAME = NicooPlayer;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				WRAPPER_EXTENSION = bundle;
+			};
+			name = Debug;
+		};
+		FC3BF9FDC8D4068854FAC381266EBC30 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4B62DC718A4CD300CB1C339EA6A9A239 /* NicooPlayer.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/NicooPlayer/NicooPlayer-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/NicooPlayer/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/NicooPlayer/NicooPlayer.modulemap";
+				PRODUCT_MODULE_NAME = NicooPlayer;
+				PRODUCT_NAME = NicooPlayer;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		0B830F4EC6B8F9DF500766687C50285A /* Build configuration list for PBXNativeTarget "CocoaHTTPServer" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5067DDA4924A1F4B647A013997D7A61D /* Debug */,
+				387432046226FB2620664004445DC484 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		0EDA6F9D2A954410DE0820EF439D427D /* Build configuration list for PBXNativeTarget "Pods-NicooM3u8Downloader_Example" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D5D7C5A5A992562C2FFB81595997BF85 /* Debug */,
+				682C5C03F505C703A860D04B98D9F5DB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				50646285DD9FD95AF390BDA3FB1948EA /* Debug */,
+				58DCB2BA7C34E84C00C38CEF18A96D11 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4E5FF87B5C52E34FC26048A8F14A0423 /* Build configuration list for PBXNativeTarget "SnapKit" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8A3623CB7DA252FF6AD6677303E7283B /* Debug */,
+				4C36529463A7715AF4126B81DC8926E2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		5191A4B47BB92512E33AF87CB757DE24 /* Build configuration list for PBXNativeTarget "Pods-NicooM3u8Downloader_Tests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B97B2A7192C1586C9B7BB6F1F083014C /* Debug */,
+				C2BA69898C83891E99750365D982B59E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		76D9D4619E57528F69AD6EE728642684 /* Build configuration list for PBXNativeTarget "NicooPlayer-NicooPlayer" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E6BD3E7FFC17CD6396F1C82389C8BBAD /* Debug */,
+				53EE40A9A61B9AEB02058DF648DA3864 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		839318F0807652AD23EE2792FC4F4915 /* Build configuration list for PBXNativeTarget "NicooM3u8Downloader" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				762AB7D89F0485E4058FC46BA9FE2DF1 /* Debug */,
+				398FED938046ED0D611483E52987F908 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D508BE78505E0889E6967749764D0983 /* Build configuration list for PBXNativeTarget "CocoaLumberjack" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A15E7050DAAF16A6E9432A9F3B10BF4F /* Debug */,
+				2696518487E915BD5426A0FBC93B91CB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		DB4B18BC646AD400FE52808E62839AB5 /* Build configuration list for PBXNativeTarget "CocoaAsyncSocket" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B5BB4B8E7F3E227F6DB7E43EDC8B3A82 /* Debug */,
+				54D5246C66ECDB3824F21787B41AA8AE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E606B2C6C7B982D9297C42085A492CBB /* Build configuration list for PBXNativeTarget "NicooPlayer" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A34AEFCF764CBA670B9032FAE75789D1 /* Debug */,
+				FC3BF9FDC8D4068854FAC381266EBC30 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+}

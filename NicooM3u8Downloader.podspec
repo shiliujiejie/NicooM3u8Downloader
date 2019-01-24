@@ -9,7 +9,7 @@
 Pod::Spec.new do |s|
   s.name             = 'NicooM3u8Downloader'
   s.version          = '0.1.0'
-  s.summary          = 'A short description of NicooM3u8Downloader.'
+  s.summary          = 'NicooM3u8Downloader for .m3u8 video Download.'
 
 # This description is used to generate tags and improve search results.
 #   * Think: What does it do? Why did you write it? What is the focus?

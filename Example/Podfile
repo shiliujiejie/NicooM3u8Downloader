@@ -2,7 +2,9 @@ use_frameworks!
 
 target 'NicooM3u8Downloader_Example' do
   pod 'NicooM3u8Downloader', :path => '../'
-
+  
+  pod 'CocoaHTTPServer'
+  pod 'NicooPlayer'
   target 'NicooM3u8Downloader_Tests' do
     inherit! :search_paths
 

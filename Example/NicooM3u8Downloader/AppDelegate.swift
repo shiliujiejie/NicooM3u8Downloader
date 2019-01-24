@@ -7,16 +7,28 @@
 //
 
 import UIKit
+import NicooPlayer
+import CocoaHTTPServer
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
     var window: UIWindow?
 
+   
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
         return true
+    }
+    
+    //  整个项目支持竖屏，播放页面需要横屏，导入播放器头文件，添加下面方法：
+    func application(_ application: UIApplication, supportedInterfaceOrientationsFor window: UIWindow?)
+        -> UIInterfaceOrientationMask {
+            guard let num =  NicooPlayerOrietation(rawValue: orientationSupport.rawValue) else {
+                return [.portrait]
+            }
+            return num.getOrientSupports()           // 这里的支持方向，做了组件化的朋友，实际项目中可以考虑用路由去播放器内拿，
     }
 
     func applicationWillResignActive(_ application: UIApplication) {
@@ -41,6 +53,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         // Called when the application is about to terminate. Save data if appropriate. See also applicationDidEnterBackground:.
     }
 
+   
+    
 
 }
 
