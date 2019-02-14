@@ -156,6 +156,8 @@ open class NicooPlayerView: UIView {
     }
     /// 视频填充模式
     public var videoLayerGravity: AVLayerVideoGravity = .resizeAspect
+    /// 是否只在全屏时显示视频名称
+    public var videoNameShowOnlyFullScreen: Bool = false
     public weak var delegate: NicooPlayerDelegate?
     public weak var customViewDelegate: NicooCustomMuneDelegate?
     
@@ -176,7 +178,7 @@ open class NicooPlayerView: UIView {
         didSet {
             if oldValue < playedValue {  // 表示在播放中
                 if !playControllViewEmbed.panGesture.isEnabled && !playControllViewEmbed.screenIsLock! {
-                    playControllViewEmbed.panGesture.isEnabled = !isM3U8
+                    playControllViewEmbed.panGesture.isEnabled = true
                 }
                 self.hideLoadingHud()
                 if self.subviews.contains(loadedFailedView) {
@@ -490,8 +492,8 @@ private extension NicooPlayerView {
         guard let localUrl = filePathUrl else { return }
         playControllViewEmbed.playLocalFile = true  // 声明直接就进入全屏播放               ------------------   1
         fileUrlString = localUrl              // 保存本地文件URL
-        
         /// 重置播放源
+        /// 这里这样写，是为了兼容，ts流 本地服务器播放， m3u8视频 文件 ts 下载后，需要搭建本地服务器播放，走的也是网络播放，只是资源在本地，通过
         var url = URL(string: "")
         if localUrl.hasPrefix("http") {
             url = URL(string: localUrl)
@@ -929,9 +931,9 @@ private extension NicooPlayerView {
         let allTimeString =  formatTimDuration(position: Int(sumValue), duration: Int(totalMoveDuration))
         let draggedTimeString = formatTimPosition(position: Int(sumValue), duration: Int(totalMoveDuration))
         draggedTimeLable.text = String(format: "%@|%@", draggedTimeString, allTimeString)
+        playControllViewEmbed.positionTimeLab.text = self.formatTimPosition(position: Int(sumValue), duration: Int(totalMoveDuration))
         draggedStatusButton.isSelected = moveValue < 0
-        if !isDragging {
-             playControllViewEmbed.positionTimeLab.text = self.formatTimPosition(position: Int(sumValue), duration: Int(totalMoveDuration))
+        if !isDragging {     
              playControllViewEmbed.timeSlider.value = Float(dragValue)
         }
         sumTime = sumValue
@@ -1028,7 +1030,7 @@ private extension NicooPlayerView {
                     make.edges.equalTo(UIApplication.shared.keyWindow!)
                 })
                 if #available(iOS 11.0, *) {                           // 横屏播放时，适配X
-                    if UIDevice.current.isSimulator() {
+                    if UIDevice.current.isiPhoneXSeriesDevices() {
                         self.playControllViewEmbed.snp.remakeConstraints({ (make) in
                             make.leading.equalTo(self.safeAreaLayoutGuide.snp.leading).offset(28)
                             make.trailing.equalTo(self.safeAreaLayoutGuide.snp.trailing).offset(-28)
@@ -1039,6 +1041,7 @@ private extension NicooPlayerView {
                 }
                 self.layoutIfNeeded()
                 self.playControllViewEmbed.layoutIfNeeded()
+                self.playControllViewEmbed.videoNameLable.isHidden = false
             }, completion: nil)
             
         } else if orirntation == UIInterfaceOrientation.portrait {
@@ -1056,6 +1059,7 @@ private extension NicooPlayerView {
                         })
                         self.layoutIfNeeded()
                         self.playControllViewEmbed.layoutIfNeeded()
+                        self.playControllViewEmbed.videoNameLable.isHidden = self.videoNameShowOnlyFullScreen
                     }, completion: nil)
                 }
             }
@@ -1080,7 +1084,7 @@ private extension NicooPlayerView {
     
 }
 
-// MARK: - TZPlayerControlViewDelegate
+// MARK: - NicooPlayerControlViewDelegate
 extension NicooPlayerView: NicooPlayerControlViewDelegate {
     
     func sliderTouchBegin(_ sender: UISlider) {
@@ -1125,6 +1129,7 @@ extension NicooPlayerView: NicooPlayerControlViewDelegate {
         let allTimeString =  self.formatTimDuration(position: Int(dragValue), duration: Int(duration))
         let draggedTimeString = self.formatTimPosition(position: Int(dragValue), duration: Int(duration))
         self.draggedTimeLable.text = String(format: "%@|%@", draggedTimeString, allTimeString)
+        self.playControllViewEmbed.positionTimeLab.text = draggedTimeString
     }
 }
 

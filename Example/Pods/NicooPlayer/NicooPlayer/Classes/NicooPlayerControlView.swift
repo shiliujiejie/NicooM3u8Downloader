@@ -441,7 +441,7 @@ extension NicooPlayerControlView {
             make.height.equalTo(0)
         }
         bottomControlBarView.snp.updateConstraints { (make) in
-            make.height.equalTo(fullScreen! ? 10 : 40)
+            make.height.equalTo(fullScreen! ? 10 : 60)
         }
         
         UIView.animate(withDuration: 0.1, animations: {
@@ -461,7 +461,7 @@ extension NicooPlayerControlView {
         }
         
         bottomControlBarView.snp.updateConstraints { (make) in
-            make.height.equalTo(40)
+            make.height.equalTo(60)
         }
         UIView.animate(withDuration: 0.2, animations: {
             self.layoutIfNeeded()
@@ -502,7 +502,7 @@ extension NicooPlayerControlView {
             if UIDevice.current.isPad() {             //兼容iPad
                 make.height.equalTo(80)
             } else {
-                make.height.equalTo(40)
+                make.height.equalTo(60)
             }
             
         }
@@ -652,10 +652,10 @@ extension NicooPlayerControlView {
         bottomControlBarView.layoutIfNeeded()
         if fullScreen! {
             topBarBgLayer.frame = CGRect(x: -80, y: 0, width: topControlBarView.frame.size.width + 160, height: topControlBarView.frame.size.height)
-            bottomBarBgLayer.frame = CGRect(x: -80, y: 0, width: bottomControlBarView.frame.size.width + 160, height: 40)
+            bottomBarBgLayer.frame = CGRect(x: -80, y: 0, width: bottomControlBarView.frame.size.width + 160, height: 60)
         } else {
             topBarBgLayer.frame = CGRect(x: 0, y: 0, width: topControlBarView.frame.size.width, height: topControlBarView.frame.size.height)
-            bottomBarBgLayer.frame = CGRect(x: 0, y: 0, width: bottomControlBarView.frame.size.width, height: 40)
+            bottomBarBgLayer.frame = CGRect(x: 0, y: 0, width: bottomControlBarView.frame.size.width, height: 60)
         }
        
     }

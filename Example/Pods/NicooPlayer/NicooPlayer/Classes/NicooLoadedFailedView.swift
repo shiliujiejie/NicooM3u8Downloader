@@ -13,20 +13,19 @@ class NicooLoadedFailedView: UIView {
     fileprivate var loadFailedTitle: UILabel = {
         let lable = UILabel()
         lable.textAlignment = .center
-        lable.text = "网络不可用，请检查网络设置"
+        lable.text = "视频连接失败，请检查网络设置!"
         lable.font = UIFont.systemFont(ofSize: 15)
         lable.textColor = UIColor.white
-        
-        
+        lable.numberOfLines = 2
         return lable
     }()
     var retryButton: UIButton = {
         let button = UIButton(type: .custom)
         button.setTitle("点击重试", for: .normal)
-        button.titleLabel?.font = UIFont.systemFont(ofSize: 15)
-        button.layer.cornerRadius = 5
-        button.layer.borderColor = UIColor.white.cgColor
-        button.layer.borderWidth = 0.5
+        button.titleLabel?.font = UIFont.systemFont(ofSize: 17)
+        button.layer.cornerRadius = 17.5
+        button.layer.masksToBounds = true
+        button.backgroundColor = UIColor(red: 255/255.0, green: 105/255.0, blue: 27/255.0, alpha: 1)
         button.addTarget(self, action: #selector(retryButtonClick(_:)), for: .touchUpInside)
         return button
     }()
@@ -58,13 +57,13 @@ class NicooLoadedFailedView: UIView {
         loadFailedTitle.snp.makeConstraints { (make) in
             make.centerX.equalToSuperview()
             make.centerY.equalToSuperview().offset(-25)
-            make.height.equalTo(30)
+            make.height.equalTo(45)
         }
         retryButton.snp.makeConstraints { (make) in
             make.centerX.equalToSuperview()
             make.centerY.equalToSuperview().offset(25)
-            make.height.equalTo(30)
-            make.width.equalTo(80)
+            make.height.equalTo(35)
+            make.width.equalTo(130)
         }
     }
     
