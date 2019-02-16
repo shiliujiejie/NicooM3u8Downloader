@@ -37,8 +37,6 @@ class DownLoadedVideoPlayerVC: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         view.backgroundColor = UIColor.white
-        print("ipaddress == \(String(describing: IpAddressTool.getIPAddress(false)))")
-       
     }
     
     override func viewWillAppear(_ animated: Bool) {
@@ -48,8 +46,8 @@ class DownLoadedVideoPlayerVC: UIViewController {
     private func playLocalVideo() {
         server = HTTPServer()
         server.setType("_http.tcp")
- 
-        server.setDocumentRoot(NicooDownLoadHelper.getDocumentsDirectory().appendingPathComponent(NicooDownLoadHelper.downloadFile).appendingPathComponent(videoName).path)
+
+    server.setDocumentRoot(NicooDownLoadHelper.getDocumentsDirectory().appendingPathComponent(NicooDownLoadHelper.downloadFile).appendingPathComponent(videoName).path)
         print("localFilePath = \(NicooDownLoadHelper.getDocumentsDirectory().appendingPathComponent(NicooDownLoadHelper.downloadFile).path)")
         server.setPort(UInt16(port))
         do {
@@ -58,7 +56,7 @@ class DownLoadedVideoPlayerVC: UIViewController {
             print("本地服务器启动失败")
         }
         let videoLocalUrl = "\(getLocalServerBaseUrl()):\(port)/\(videoName).m3u8"
-        videoPlayer.playLocalVideoInFullscreen(videoLocalUrl, "localFile", view, sinceTime: 0)
+        videoPlayer.playLocalVideoInFullscreen(videoLocalUrl, "localFile", view)
         videoPlayer.playLocalFileVideoCloseCallBack = { [weak self] (playValue) in
             // 退出时，关闭本地服务器
             self?.server.stop()

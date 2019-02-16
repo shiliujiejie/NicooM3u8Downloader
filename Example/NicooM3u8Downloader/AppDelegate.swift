@@ -8,7 +8,6 @@
 
 import UIKit
 import NicooPlayer
-import CocoaHTTPServer
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {

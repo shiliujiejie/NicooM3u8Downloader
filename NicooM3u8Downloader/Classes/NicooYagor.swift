@@ -43,7 +43,7 @@ open class NicooYagor {
     open func deleteAllDownloadedContents() {
         let filePath = NicooDownLoadHelper.getDocumentsDirectory().appendingPathComponent(NicooDownLoadHelper.downloadFile).path
         if FileManager.default.fileExists(atPath: filePath) {
-            try! FileManager.default.removeItem(atPath: filePath)
+            try? FileManager.default.removeItem(atPath: filePath)
         } else {
             print("File has already been deleted.")
         }
@@ -56,7 +56,7 @@ open class NicooYagor {
         let filePath = NicooDownLoadHelper.getDocumentsDirectory().appendingPathComponent(NicooDownLoadHelper.downloadFile).appendingPathComponent(name).path
         
         if FileManager.default.fileExists(atPath: filePath) {
-            try! FileManager.default.removeItem(atPath: filePath)
+            try? FileManager.default.removeItem(atPath: filePath)
         } else {
             print("Could not find directory with name: \(name)")
         }

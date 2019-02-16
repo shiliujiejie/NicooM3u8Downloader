@@ -63,10 +63,16 @@ class ViewController: UIViewController {
         button.addTarget(self, action: #selector(playLocalVideo2), for: .touchUpInside)
         return button
     }()
+    private lazy var rightBarButton: UIBarButtonItem = {
+        let barItem = UIBarButtonItem(title: "列表下载", style: .plain, target: self, action: #selector(goListDownLoad(_:)))
+        barItem.tintColor = UIColor.darkText
+        return barItem
+    }()
     
     override func viewDidLoad() {
         super.viewDidLoad()
         view.backgroundColor = UIColor.white
+        self.navigationItem.rightBarButtonItem = rightBarButton
         view.addSubview(downLoadBtn)
         view.addSubview(downLoadBtn1)
         view.addSubview(downLoadBtn2)
@@ -75,7 +81,11 @@ class ViewController: UIViewController {
         view.addSubview(playVideo2)
     }
 
-    
+    @objc func goListDownLoad(_ sender: UIButton) {
+        let taskVC = TaskListController()
+        taskVC.title = "download Tasks"
+        navigationController?.pushViewController(taskVC, animated: true)
+    }
  
 }
 

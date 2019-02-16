@@ -7,8 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		180CB5002217ABE300D75D8C /* TaskListController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 180CB4FF2217ABE300D75D8C /* TaskListController.swift */; };
+		180CB50C2217B81600D75D8C /* DownloadTaskListCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 180CB50B2217B81600D75D8C /* DownloadTaskListCell.swift */; };
+		180CB5122217C51D00D75D8C /* videoPic15.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 180CB50F2217C51D00D75D8C /* videoPic15.jpg */; };
 		1868BEC521F5A22E0064C2EB /* DownLoadedVideoPlayerVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1868BEC421F5A22E0064C2EB /* DownLoadedVideoPlayerVC.swift */; };
-		1891621A21F6B97E00A4966C /* IpAddressTool.m in Sources */ = {isa = PBXBuildFile; fileRef = 1891621921F6B97E00A4966C /* IpAddressTool.m */; };
 		1891621C21F6BCCB00A4966C /* libxml2.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 1891621B21F6BCCB00A4966C /* libxml2.tbd */; };
 		607FACD61AFB9204008FA782 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 607FACD51AFB9204008FA782 /* AppDelegate.swift */; };
 		607FACD81AFB9204008FA782 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 607FACD71AFB9204008FA782 /* ViewController.swift */; };
@@ -31,10 +33,11 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		180CB4FF2217ABE300D75D8C /* TaskListController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskListController.swift; sourceTree = "<group>"; };
+		180CB50B2217B81600D75D8C /* DownloadTaskListCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DownloadTaskListCell.swift; sourceTree = "<group>"; };
+		180CB50F2217C51D00D75D8C /* videoPic15.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = videoPic15.jpg; sourceTree = "<group>"; };
 		1868BEC421F5A22E0064C2EB /* DownLoadedVideoPlayerVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DownLoadedVideoPlayerVC.swift; sourceTree = "<group>"; };
 		1891621721F6B97D00A4966C /* NicooM3u8Downloader_Example-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NicooM3u8Downloader_Example-Bridging-Header.h"; sourceTree = "<group>"; };
-		1891621821F6B97E00A4966C /* IpAddressTool.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = IpAddressTool.h; sourceTree = "<group>"; };
-		1891621921F6B97E00A4966C /* IpAddressTool.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = IpAddressTool.m; sourceTree = "<group>"; };
 		1891621B21F6BCCB00A4966C /* libxml2.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libxml2.tbd; path = usr/lib/libxml2.tbd; sourceTree = SDKROOT; };
 		3FCDB9497399680A1B00DF21 /* Pods_NicooM3u8Downloader_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_NicooM3u8Downloader_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		607FACD01AFB9204008FA782 /* NicooM3u8Downloader_Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NicooM3u8Downloader_Example.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -88,6 +91,35 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		180CB5082217B70F00D75D8C /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				180CB50B2217B81600D75D8C /* DownloadTaskListCell.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		180CB5092217B71900D75D8C /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				607FACD71AFB9204008FA782 /* ViewController.swift */,
+				180CB4FF2217ABE300D75D8C /* TaskListController.swift */,
+				1868BEC421F5A22E0064C2EB /* DownLoadedVideoPlayerVC.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		180CB50A2217B75F00D75D8C /* Others */ = {
+			isa = PBXGroup;
+			children = (
+				607FACD51AFB9204008FA782 /* AppDelegate.swift */,
+				607FACD91AFB9204008FA782 /* Main.storyboard */,
+				607FACDE1AFB9204008FA782 /* LaunchScreen.xib */,
+				1891621721F6B97D00A4966C /* NicooM3u8Downloader_Example-Bridging-Header.h */,
+			);
+			name = Others;
+			sourceTree = "<group>";
+		};
 		607FACC71AFB9204008FA782 = {
 			isa = PBXGroup;
 			children = (
@@ -112,16 +144,10 @@
 		607FACD21AFB9204008FA782 /* Example for NicooM3u8Downloader */ = {
 			isa = PBXGroup;
 			children = (
-				607FACD51AFB9204008FA782 /* AppDelegate.swift */,
-				607FACD71AFB9204008FA782 /* ViewController.swift */,
-				1891621821F6B97E00A4966C /* IpAddressTool.h */,
-				1891621921F6B97E00A4966C /* IpAddressTool.m */,
-				1868BEC421F5A22E0064C2EB /* DownLoadedVideoPlayerVC.swift */,
-				607FACD91AFB9204008FA782 /* Main.storyboard */,
-				607FACDC1AFB9204008FA782 /* Images.xcassets */,
-				607FACDE1AFB9204008FA782 /* LaunchScreen.xib */,
+				180CB50A2217B75F00D75D8C /* Others */,
+				180CB5092217B71900D75D8C /* Controllers */,
+				180CB5082217B70F00D75D8C /* Views */,
 				607FACD31AFB9204008FA782 /* Supporting Files */,
-				1891621721F6B97D00A4966C /* NicooM3u8Downloader_Example-Bridging-Header.h */,
 			);
 			name = "Example for NicooM3u8Downloader";
 			path = NicooM3u8Downloader;
@@ -130,6 +156,8 @@
 		607FACD31AFB9204008FA782 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				180CB50F2217C51D00D75D8C /* videoPic15.jpg */,
+				607FACDC1AFB9204008FA782 /* Images.xcassets */,
 				607FACD41AFB9204008FA782 /* Info.plist */,
 			);
 			name = "Supporting Files";
@@ -262,6 +290,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				180CB5122217C51D00D75D8C /* videoPic15.jpg in Resources */,
 				607FACDB1AFB9204008FA782 /* Main.storyboard in Resources */,
 				607FACE01AFB9204008FA782 /* LaunchScreen.xib in Resources */,
 				607FACDD1AFB9204008FA782 /* Images.xcassets in Resources */,
@@ -363,8 +392,9 @@
 			files = (
 				607FACD81AFB9204008FA782 /* ViewController.swift in Sources */,
 				607FACD61AFB9204008FA782 /* AppDelegate.swift in Sources */,
+				180CB50C2217B81600D75D8C /* DownloadTaskListCell.swift in Sources */,
+				180CB5002217ABE300D75D8C /* TaskListController.swift in Sources */,
 				1868BEC521F5A22E0064C2EB /* DownLoadedVideoPlayerVC.swift in Sources */,
-				1891621A21F6B97E00A4966C /* IpAddressTool.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

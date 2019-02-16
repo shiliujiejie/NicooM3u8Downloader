@@ -20,7 +20,7 @@ open class NicooDownLoadHelper: NSObject {
     open class func checkOrCreatedM3u8Directory(_ identifer: String) {
         let filePath = getDocumentsDirectory().appendingPathComponent(downloadFile).appendingPathComponent(identifer)
         if !FileManager.default.fileExists(atPath: filePath.path) {
-            try! FileManager.default.createDirectory(at: filePath, withIntermediateDirectories: true, attributes: nil)
+            try? FileManager.default.createDirectory(at: filePath, withIntermediateDirectories: true, attributes: nil)
         }
     }
     
