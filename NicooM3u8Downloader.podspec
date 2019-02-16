@@ -2,7 +2,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'NicooM3u8Downloader'
-  s.version          = '0.1.0'
+  s.version          = '0.1.1'
   s.summary          = 'NicooM3u8Downloader for .m3u8 video Download.'
   s.description      = <<-DESC
    .m3u8 parse , ts video Download.  local ts list play.
