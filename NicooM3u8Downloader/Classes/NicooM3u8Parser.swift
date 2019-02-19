@@ -98,6 +98,7 @@ open class NicooM3u8Parser: NSObject {
             } catch let error {
                 print(error.localizedDescription)
                 print("<Layer> m3u8 file content first read error. \(url)")
+                self.delegate?.parseM3u8Failed(by: self)
             }
         }
     }

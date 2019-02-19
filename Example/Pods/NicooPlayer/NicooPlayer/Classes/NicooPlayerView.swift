@@ -31,7 +31,7 @@ public extension NicooCustomMuneDelegate {
 public protocol NicooPlayerDelegate: class {
     
     /// 代理在外部处理网络问题
-    func retryToPlayVideo(_ videoModel: NicooVideoModel?, _ fatherView: UIView?)
+    func retryToPlayVideo(_ player: NicooPlayerView, _ videoModel: NicooVideoModel?, _ fatherView: UIView?)
     
     /// 当前播放的视频播放完成时调用
     ///
@@ -97,6 +97,7 @@ open class NicooPlayerView: UIView {
                 }
             }else if playerStatu == PlayerStatus.Pause {
                 player?.pause()
+                hideLoadingHud()
                 playControllViewEmbed.playOrPauseBtn.isSelected = false
                 if !self.subviews.contains(pauseButton) {
                     self.insertSubview(pauseButton, aboveSubview: playControllViewEmbed)
@@ -189,30 +190,12 @@ open class NicooPlayerView: UIView {
     }
     /// 父视图
     private weak var fatherView: UIView?  {
-        willSet {
-            if newValue != nil {
-                for view in (newValue?.subviews)! {
-                    if view.tag != 0 {                  // 这里用于cell播放时，隐藏播放按钮
-                        view.isHidden = true
-                    }
-                }
-            }
-        }
         didSet {
-            if oldValue != nil && oldValue != fatherView {
-                for view in (oldValue?.subviews)! {     // 当前播放器的tag为0
-                    if view.tag != 0 {
-                        view.isHidden = false           // 显示cell上的播放按钮
-                    }
-                }
-            }
             if fatherView != nil && !(fatherView?.subviews.contains(self))! {
                 fatherView?.addSubview(self)
-            }
-            
+            }  
         }
     }
-    
     /// 嵌入式播放控制View
     private lazy var playControllViewEmbed: NicooPlayerControlView = {
         let playControllView = NicooPlayerControlView(frame: self.bounds, fullScreen: false, bottomBarType ?? PlayerBottomBarType.PlayerBottomBarTimeRight)
@@ -412,8 +395,10 @@ extension NicooPlayerView {
     ///
     /// - Parameter containerView: New fatherView
     open func changeVideoContainerView(_ containerView: UIView) {
-        fatherView = containerView
-        layoutAllPageSubviews()        //改变了父视图，需要重新布局
+        if fatherView != containerView {
+            fatherView = containerView
+            layoutAllPageSubviews()        //改变了父视图，需要重新布局
+        }
     }
     
     /// 获取当前播放时间点 + 视频总时长
@@ -431,8 +416,13 @@ extension NicooPlayerView {
     }
     
     /// 取消视频缓存加载
-    public func cancle() {
+    open func cancle() {
         resouerLoader?.cancel()
+    }
+    
+    open func destroyPlayer() {
+        releasePlayer()
+        self.removeFromSuperview()
     }
     
     /// 强制横屏
@@ -455,6 +445,8 @@ extension NicooPlayerView {
     open func enableDeviceOrientationChange() {
         NotificationCenter.default.addObserver(self, selector: #selector(NicooPlayerView.orientChange(_:)), name: UIDevice.orientationDidChangeNotification, object: UIDevice.current)
     }
+    
+    
 }
 
 // MARK: - Private Funcs (私有方法)
@@ -465,6 +457,7 @@ private extension NicooPlayerView {
         // 👇三个属性的设置顺序很重要
         self.playUrl = url   // 判断视频链接是否更改，更改了就重置播放器
         self.videoName = videoName      // 视频名称
+        self.playControllViewEmbed.videoNameLable.isHidden = videoNameShowOnlyFullScreen
         
         if !isFullScreen! {
             fatherView = containView // 更换父视图时
@@ -590,6 +583,7 @@ private extension NicooPlayerView {
                 avAsset = AVURLAsset(url: videoUrl, options: nil)
             } else {
                 // 非流媒体的视频，使用resouerLoader缓冲数据
+                // 现在主流的视频都是流媒体，所以这里要考虑下流媒体的下载，然后做断点续传。
                 isM3U8 = false
                 avAsset = AVURLAsset(url: videoUrl, options: nil)
                 //                resouerLoader = NicooAssetResourceLoader()
@@ -736,9 +730,11 @@ private extension NicooPlayerView {
         }
         // MARK: - 播放暂停
         playControllViewEmbed.playOrPauseButtonClickBlock = { [weak self] (sender) in
-            if self?.playerStatu == PlayerStatus.Playing {
+            if self?.playerStatu == PlayerStatus.Playing || self?.playerStatu == PlayerStatus.Buffering || self?.playerStatu == PlayerStatus.ReadyToPlay {
+                print("self?.playerStatu = \(String(describing: self?.playerStatu))")
+                self?.hideLoadingHud()
                 self?.playerStatu = PlayerStatus.Pause
-            }else if self?.playerStatu == PlayerStatus.Pause {
+            } else if self?.playerStatu == PlayerStatus.Pause {
                 self?.playerStatu = PlayerStatus.Playing
             }
         }
@@ -998,8 +994,10 @@ private extension NicooPlayerView {
     private func showLoadedFailedView() {
         self.addSubview(loadedFailedView)
         loadedFailedView.retryButtonClickBlock = { [weak self] (sender) in
-            let model = NicooVideoModel(videoName: self?.videoName, videoUrl: self?.playUrl?.absoluteString, videoPlaySinceTime: (self?.playTimeSince)!)
-            self?.delegate?.retryToPlayVideo(model, self?.fatherView)
+            guard let strongSelf = self else { return }
+            let model = NicooVideoModel(videoName: strongSelf.videoName, videoUrl: strongSelf.playUrl?.absoluteString, videoPlaySinceTime: strongSelf.playTimeSince)
+            //strongSelf.delegate?.retryToPlayVideo(strongSelf, model, strongSelf.fatherView)
+            strongSelf.delegate?.retryToPlayVideo(strongSelf, model, strongSelf.fatherView)
         }
         loadedFailedView.snp.makeConstraints { (make) in
             make.edges.equalToSuperview()

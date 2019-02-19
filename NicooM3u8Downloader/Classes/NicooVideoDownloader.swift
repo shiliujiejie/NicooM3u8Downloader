@@ -12,6 +12,7 @@ public enum Status {
     case paused
     case canceled
     case finished
+    case failed
 }
 
 /// 下载成功失败， 进度 回调
@@ -175,9 +176,8 @@ extension VideoDownloader: TSDownloaderDelegate {
         let downloadingFilesCount = segmentDownloaders.filter({ $0.isDownloading == true }).count
         
         if finishedDownloadFilesCount == neededDownloadTsFilesCount {
-            delegate?.videoDownloadSucceeded(by: self)
-            
             downloadStatus = .finished
+            delegate?.videoDownloadSucceeded(by: self)
         } else if startDownloadIndex == neededDownloadTsFilesCount - 1 {
             if segmentDownloaders[startDownloadIndex].isDownloading == true { return }
         }
@@ -185,12 +185,12 @@ extension VideoDownloader: TSDownloaderDelegate {
             if startDownloadIndex < neededDownloadTsFilesCount - 1 {
                 startDownloadIndex += 1
             }
-            
             segmentDownloaders[startDownloadIndex].startDownload()
         }
     }
     
     func tsDownloadFailed(with downloader: NicooTsDownloader) {
+        downloadStatus = .failed
         delegate?.videoDownloadFailed(by: self)
     }
 }

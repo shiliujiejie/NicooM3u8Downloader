@@ -58,7 +58,7 @@ open class NicooVideoRequestTask: NSObject {
     private func initialTmpFile() {
         do { try FileManager.default.createDirectory(atPath: VideoFilePath.videoDicPath, withIntermediateDirectories: true, attributes: nil) } catch { print("creat dic false -- error:\(error)") }
         if FileManager.default.fileExists(atPath: VideoFilePath.tempPath) {
-            try? FileManager.default.removeItem(atPath: VideoFilePath.tempPath)
+            try! FileManager.default.removeItem(atPath: VideoFilePath.tempPath)
         }
         FileManager.default.createFile(atPath: VideoFilePath.tempPath, contents: nil, attributes: nil)
     }
@@ -71,7 +71,7 @@ extension NicooVideoRequestTask {
     
     open func setUrl(url: NSURL, offSet: Int) {
         func initialTmpFile() {
-            try? FileManager.default.removeItem(atPath: VideoFilePath.tempPath)
+            try! FileManager.default.removeItem(atPath: VideoFilePath.tempPath)
             FileManager.default.createFile(atPath: VideoFilePath.tempPath, contents: nil, attributes: nil)
         }
         self.url = url
@@ -132,7 +132,7 @@ extension NicooVideoRequestTask {
     open func clearData() {
         connection?.cancel()
         if FileManager.default.fileExists(atPath: VideoFilePath.tempPath) {
-            try? FileManager.default.removeItem(atPath: VideoFilePath.tempPath)
+            try! FileManager.default.removeItem(atPath: VideoFilePath.tempPath)
         }
     }
     

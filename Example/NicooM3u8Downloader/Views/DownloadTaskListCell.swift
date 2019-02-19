@@ -27,8 +27,8 @@ class DownloadTaskListCell: UITableViewCell {
         let progress = UIProgressView()
         progress.progressViewStyle = .default
         progress.progressTintColor = UIColor.green
-        progress.trackTintColor = UIColor.yellow
-        progress.progress = 0.6
+        progress.trackTintColor = UIColor.groupTableViewBackground
+        progress.progress = 0.0
         return progress
     }()
     var percentageLable: UILabel = {
@@ -39,7 +39,7 @@ class DownloadTaskListCell: UITableViewCell {
     }()
     lazy var statuButton: UIButton = {
         let button = UIButton(type: .custom)
-        button.setTitle("开始下载", for: .normal)
+        button.setTitle("等待下载", for: .normal)
         button.setTitleColor(UIColor.darkText, for: .normal)
         button.titleLabel?.font = UIFont.systemFont(ofSize: 14)
         button.addTarget(self, action: #selector(statuButtonClick(_:)), for: .touchUpInside)
